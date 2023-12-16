@@ -1,7 +1,11 @@
-title: 'b2a3e8.github.io'
-description: "A jekyll theme inspired by linux consoles for hackers, developers and script kiddies."
-baseurl: "/jekyll-theme-console-demo-dark"
-url: "https://b2a3e8.github.io"
+# Example Site settings
+
+#google_analytics: UA-NNNNNNNN-N
+
+title: 'rumaiiis.github.io'
+description: "PlayGround"
+baseurl: "/"
+url: "https://rumaiiis.github.io"
 
 header_pages:
   - index.md
@@ -9,10 +13,10 @@ header_pages:
   - about.md
   - contact.md
 
-style: dark
-
 footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
 
-# Build settings
-markdown: kramdown
-remote_theme: b2a3e8/jekyll-theme-console
+style: hacker 
+
+
+plugins:
+  - jekyll-seo-tag
