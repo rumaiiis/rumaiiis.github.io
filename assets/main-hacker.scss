@@ -4,3 +4,21 @@
 
 @import "hacker";
 @import "base";
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adds some space next to the badge */
+}
+
+.social-links a {
+    margin-left: 10px; /* Space between social links */
+}
+
