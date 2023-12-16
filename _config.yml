@@ -1,4 +1,3 @@
-# Example Site settings
 
 #google_analytics: UA-NNNNNNNN-N
 
@@ -9,11 +8,14 @@ url: "https://rumaiiis.github.io"
 
 header_pages:
   - index.md
-  - peter.md
+  - blog.md
+  - poc.md
   - about.md
   - contact.md
 
-footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+#footer: ''
+
+
 
 style: hacker 
 
