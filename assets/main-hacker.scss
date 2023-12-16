@@ -22,3 +22,29 @@
     margin-left: 10px; /* Space between social links */
 }
 
+
+#typing-effect {
+    font-family: 'Courier New', monospace;
+    color: limegreen;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold; /* Make text bold */
+    font-size: 24px; /* Increase font size, adjust as needed */
+}
+
+
+
+a:hover {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1); // Grows the icon on hover
+}
+

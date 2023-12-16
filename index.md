@@ -2,9 +2,8 @@
 layout: home
 title: / 
 ---
+<h1><span id="typing-effect"></span></h1>
 
-
-# RUMAIS - A Cybersecurity Odyssey
 
 ## In the Cyber Realm, a Maverick Emerges
 
