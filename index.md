@@ -19,7 +19,7 @@ As he navigates through the labyrinth of cybersecurity, Rumais is not just solvi
 
 ## Embark on the Journey
 
-Witness the story of Rumais, a maverick in the field of cybersecurity. Join him in a world where each byte has a tale to tell, where each day is a new chapter in the saga of digital guardianship.
+Witness the story of Rumais, a maverick in the field of cybersecurity. Join him in a world where each byte has a tale to tell, where each day is a new chapter in the saga of digital guardianship.<span class="blinking-cursor">|</span>
 
 [Step into the World of RUMAIS](/about)
 

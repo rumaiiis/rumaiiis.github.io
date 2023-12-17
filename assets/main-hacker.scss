@@ -5,7 +5,7 @@
 @import "hacker";
 @import "base";
 
-
+/* Footer Styles */
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -13,38 +13,79 @@
 }
 
 .footer-logo {
-    max-width: 200px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Adds some space next to the badge */
+    max-width: 200px; // Adjust as needed
+    height: auto; // Maintain aspect ratio
+    margin-right: 10px; // Adds some space next to the badge
 }
 
 .social-links a {
-    margin-left: 10px; /* Space between social links */
+    margin-left: 10px; // Space between social links
 }
 
-
+/* Typing Effect */
 #typing-effect {
     font-family: 'Courier New', monospace;
     color: limegreen;
     border-right: 2px solid;
     white-space: nowrap;
     overflow: hidden;
-    font-weight: bold; /* Make text bold */
-    font-size: 24px; /* Increase font size, adjust as needed */
+    font-weight: bold; // Make text bold
+    font-size: 24px; // Increase font size, adjust as needed
 }
 
-
-
+/* Hover Effects */
 a:hover {
     color: limegreen;
     text-decoration: underline;
 }
 
+/* Icon Transformations */
 .icon {
     transition: transform 0.3s ease;
 }
 
 .icon:hover {
     transform: scale(1.1); // Grows the icon on hover
+}
+
+/* Terminal Line Style */
+.terminal-line {
+    font-family: 'Courier New', monospace;
+    color: limegreen;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.command {
+    margin-left: 5px;
+    margin-right: 1px; // Space before the cursor
+}
+
+/* Blinking Cursor */
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 20px;
+    color: limegreen;
+    animation: blink 1s step-end infinite;
+}
+
+/* Blinking Animation */
+@keyframes blink {
+    from, to { color: transparent }
+    50% { color: limegreen }
+}
+
+/* Inline Menu Styles */
+header .menu ul {
+    display: flex; // Ensures inline display of menu items
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center; // Aligns menu items vertically
+}
+
+header .menu ul li {
+    margin: 0 10px; // Adjust spacing between menu items
 }
 

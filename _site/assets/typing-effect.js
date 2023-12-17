@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const text = 'RUMAIS - A Cybersecurity Odyssey';
+    const text = 'A Cybersecurity Odyssey';
     let index = 0;
 
     function typeEffect() {
