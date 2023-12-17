@@ -4,7 +4,7 @@ layout: page
 permalink: /contact
 ---
 
-# Get in touch?
+# Ping Me! 
 
 <form>
   <input type="text" id="name" name="name" placeholder="name:" autocomplete="off">
