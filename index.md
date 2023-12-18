@@ -9,7 +9,6 @@ title: /
 
 In the ever-evolving tapestry of the digital world, where data flows like rivers of light and darkness, a figure emerges, distinct in his mastery and intuition. He is Rumais, known in the circles of cybersecurity as a maverick, a guardian of the digital frontier.
 
-His odyssey is woven through the complex corridors of cyberspace, from the foundational years at Soften Technologies, where he first decoded the languages of networks and data, to the challenging battlegrounds at DTS Solution, where he stands as a beacon against emerging cyber threats.
 
 ## The Artisan of Cybersecurity
 
