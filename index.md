@@ -85,6 +85,43 @@ title: /
   </div>
 </section>
 
+<section class="content-grid">
+  <article class="panel profile-panel profile-panel-featured">
+    <h2>Public Presence</h2>
+    <div class="profile-console">
+      <div class="profile-line">
+        <span class="profile-key">website</span>
+        <a href="https://rumaiiis.github.io" target="_blank" rel="noopener noreferrer">rumaiiis.github.io</a>
+      </div>
+      <div class="profile-line">
+        <span class="profile-key">github</span>
+        <a href="https://github.com/rumaiiis" target="_blank" rel="noopener noreferrer">github.com/rumaiiis</a>
+      </div>
+      <div class="profile-line">
+        <span class="profile-key">linkedin</span>
+        <a href="https://www.linkedin.com/in/rumais-pp/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rumais-pp</a>
+      </div>
+      <div class="profile-line">
+        <span class="profile-key">tryhackme</span>
+        <a href="https://tryhackme.com/p/rumais" target="_blank" rel="noopener noreferrer">tryhackme.com/p/rumais</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="panel profile-panel">
+    <h2>Profile View</h2>
+    <p>Detection engineering, purple-team validation, malware analysis, and security tooling integration with a focus on practical defensive improvement.</p>
+    <div class="tag-list">
+      <span class="tag">Detection Rules</span>
+      <span class="tag">Threat Simulation</span>
+      <span class="tag">EDR/XDR</span>
+      <span class="tag">SOC Workflows</span>
+      <span class="tag">ATT&amp;CK Mapping</span>
+      <span class="tag">Telemetry Analysis</span>
+    </div>
+  </article>
+</section>
+
 <section class="panel">
   <h2>Verified Credentials</h2>
   <div class="credential-strip">

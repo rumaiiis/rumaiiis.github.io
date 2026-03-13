@@ -11,6 +11,56 @@ permalink: /about/
 </section>
 
 <section class="content-grid">
+  <article class="panel profile-panel profile-panel-featured">
+    <h2>Identity</h2>
+    <div class="profile-console">
+      <div class="profile-line">
+        <span class="profile-key">name</span>
+        <strong>Rumais PP</strong>
+      </div>
+      <div class="profile-line">
+        <span class="profile-key">role</span>
+        <strong>Cyber Threat Detection Engineer</strong>
+      </div>
+      <div class="profile-line">
+        <span class="profile-key">website</span>
+        <a href="https://rumaiiis.github.io" target="_blank" rel="noopener noreferrer">rumaiiis.github.io</a>
+      </div>
+      <div class="profile-line">
+        <span class="profile-key">github</span>
+        <a href="https://github.com/rumaiiis" target="_blank" rel="noopener noreferrer">github.com/rumaiiis</a>
+      </div>
+      <div class="profile-line">
+        <span class="profile-key">linkedin</span>
+        <a href="https://www.linkedin.com/in/rumais-pp/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rumais-pp</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="panel profile-panel">
+    <h2>Snapshot</h2>
+    <div class="profile-metrics">
+      <div class="profile-metric">
+        <span class="profile-metric-value">SOC</span>
+        <span class="profile-metric-label">Monitoring and response support</span>
+      </div>
+      <div class="profile-metric">
+        <span class="profile-metric-value">SIEM</span>
+        <span class="profile-metric-label">Deployment and integration</span>
+      </div>
+      <div class="profile-metric">
+        <span class="profile-metric-value">EDR/XDR</span>
+        <span class="profile-metric-label">CrowdStrike, SentinelOne, Wazuh</span>
+      </div>
+      <div class="profile-metric">
+        <span class="profile-metric-value">THREAT SIM</span>
+        <span class="profile-metric-label">Atomic Red Team, VECTR, ATT&amp;CK validation</span>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section class="content-grid">
   <article class="panel">
     <h2>Core Work</h2>
     <ul>
@@ -50,4 +100,14 @@ permalink: /about/
     <h2>Working Principle</h2>
     <p>Use attacker behavior, telemetry, and incident findings to improve visibility, detection quality, and response time.</p>
   </article>
+</section>
+
+<section class="panel terminal-panel">
+  <h2>Public Links</h2>
+  <div class="access-links access-links-wide">
+    <a href="https://rumaiiis.github.io" target="_blank" rel="noopener noreferrer">website</a>
+    <a href="https://github.com/rumaiiis" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://www.linkedin.com/in/rumais-pp/" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <a href="https://tryhackme.com/p/rumais" target="_blank" rel="noopener noreferrer">tryhackme</a>
+  </div>
 </section>

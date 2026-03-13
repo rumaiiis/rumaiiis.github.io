@@ -14,6 +14,7 @@ permalink: /contact/
   <article class="panel">
     <h2>Links</h2>
     <ul>
+      <li>GitHub: <a href="https://github.com/rumaiiis" target="_blank" rel="noopener noreferrer">github.com/rumaiiis</a></li>
       <li>LinkedIn: <a href="https://www.linkedin.com/in/rumais-pp/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rumais-pp</a></li>
       <li>Website: <a href="https://rumaiiis.github.io" target="_blank" rel="noopener noreferrer">rumaiiis.github.io</a></li>
       <li>TryHackMe: <a href="https://tryhackme.com/p/rumais" target="_blank" rel="noopener noreferrer">tryhackme.com/p/rumais</a></li>
