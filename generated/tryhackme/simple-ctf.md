@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/simple-ctf"
 permalink: "/writeups/tryhackme/simple-ctf/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Simple CTF"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect simple-ctf</p>
   <h1>Simple CTF</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Simple CTF"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Simple CTF generally involves standard Linux CTF methodology: enumerate web and SSH services, recover or brute-force credentials, obtain a foothold, and then escalate through locally exposed binaries, files, or sudo rights.</p>
   <div class="tag-list">
     <span class="tag">service enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Simple CTF"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -53,19 +53,19 @@ room_name: "Simple CTF"
 - The local user has a useful `sudo` permission on `vim`.
 - That leads to a direct `GTFOBins`-style escalation path and root shell access.
 
-## Defensive Takeaway
+## Security Notes
 
 - Directory enumeration still pays off against small CMS deployments because hidden admin panels and secondary paths often expose the real attack surface.
 - Public CMS exploits become much more dangerous when paired with password reuse between the app and the operating system.
 - Even narrow `sudo` allowances can become full compromise if the delegated binary supports shell escape.
 
-## Supporting Notes
+## Supporting Files
 
 ### Formitch
 
 Dammit man... you're the worst dev i've seen. You set the same pass for the system user, and the password is so weak... i cracked it in seconds. Gosh... what a mess!
 
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

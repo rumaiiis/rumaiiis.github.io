@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/cyborg"
 permalink: "/writeups/tryhackme/cyborg/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Cyborg"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect cyborg</p>
   <h1>Cyborg</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -25,7 +25,7 @@ room_name: "Cyborg"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Cyborg usually combines web enumeration with Borg backup recovery: enumerate the exposed application, retrieve archive or configuration material, crack or reuse recovered credentials, gain a local shell, and finish with Linux privilege escalation.</p>
   <div class="tag-list">
     <span class="tag">web enumeration</span>
@@ -35,7 +35,7 @@ room_name: "Cyborg"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,13 +52,13 @@ room_name: "Cyborg"
 - After the SSH foothold, local enumeration drives the rest of the room.
 - The box is designed to reward artifact analysis and credential recovery more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - Backup systems are highly sensitive because they frequently contain both data and operational secrets.
 - Reusing credentials across backup tooling and user access paths multiplies the impact of a single leak.
 - Publicly exposed administrative or backup content should be treated as a critical finding, not a misconfiguration footnote.
 
-## Supporting Notes
+## Supporting Files
 
 ### Secret
 
@@ -69,7 +69,7 @@ shoutout to all the people who have gotten to this stage whoop whoop!"
 Wow I'm awful at remembering Passwords so I've taken my Friends advice and noting them down!
 alex:S3cretP@s3
 
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

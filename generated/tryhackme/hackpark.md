@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/hackpark"
 permalink: "/writeups/tryhackme/hackpark/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Hack Park"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect hackpark</p>
   <h1>Hack Park</h1>
-  <p>Windows-focused room covering network service enumeration, exploitation, lateral movement concepts, or Active Directory workflow. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Windows-focused room covering service enumeration, exploitation, and Active Directory concepts. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Windows and AD</strong>.</p>
   <div class="tag-list">
     <span class="tag">Windows and AD</span>
@@ -24,7 +24,7 @@ room_name: "Hack Park"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>HackPark typically revolves around the BlogEngine.NET surface: identify the vulnerable web application, gain code execution or a web shell through the application, then use Windows enumeration and scheduled-task or service abuse to reach administrative access.</p>
   <div class="tag-list">
     <span class="tag">ASP.NET application enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Hack Park"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Hack Park"
 - Once on the host, the path to administrative access depends on Windows task or service behavior and artifact-driven enumeration.
 - The room rewards stable shell management and careful Windows host review after the web compromise.
 
-## Defensive Takeaway
+## Security Notes
 
 - Web applications on Windows hosts collapse the gap between app compromise and system compromise when upload or code-execution features are exposed.
 - Password quality still matters even when the final exploit chain relies on a specific application bug.
 - Task and service hardening are critical because they often become the second-stage privilege-escalation path.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 
@@ -134,7 +134,7 @@ PORT     STATE SERVICE            REASON          VERSION
 | Not valid after:  2022-05-08T06:58:19
 | MD5:   1ecc af84 7235 da33 3838 fcf9 4e58 cd2a
 | SHA-1: 2271 0944 4058 b16b 64c5 0225 a2b3 776c 4fd7 810a
-| ---[redacted] CERTIFICATE---[redacted]
+| -----BEGIN CERTIFICATE-----
 | MIIC1DCCAbygAwIBAgIQVUAG/nUY6pNFTdJiyOWMqDANBgkqhkiG9w0BAQUFADAT
 | MREwDwYDVQQDEwhoYWNrcGFyazAeFw0yMTExMDYwNjU4MTlaFw0yMjA1MDgwNjU4
 | MTlaMBMxETAPBgNVBAMTCGhhY2twYXJrMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A

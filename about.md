@@ -7,12 +7,12 @@ permalink: /about/
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# cat /etc/profile</p>
   <h1>Profile</h1>
-  <p>Cyber Threat Detection Engineer working across SOC monitoring, SIEM deployment, adversary simulation, malware analysis, and purple-team validation. The workflow is direct: emulate, observe, detect, refine.</p>
+  <p>Cyber Threat Detection Engineer with experience in SOC monitoring, SIEM deployment, threat simulation, malware analysis, and purple-team validation.</p>
 </section>
 
 <section class="content-grid">
   <article class="panel">
-    <h2>Tradecraft</h2>
+    <h2>Core Work</h2>
     <ul>
       <li>Build detection logic around real attacker behavior and telemetry.</li>
       <li>Support SOC monitoring and managed CSOC operations.</li>
@@ -24,8 +24,8 @@ permalink: /about/
   </article>
 
   <article class="panel">
-    <h2>Operating Mode</h2>
-    <p>I prefer practical security engineering over theory-heavy noise. Validate controls, expose blind spots, write detections, improve visibility, and make defensive teams faster under real attack conditions.</p>
+    <h2>Approach</h2>
+    <p>I focus on practical security work: validate controls, identify blind spots, improve detections, and make defensive workflows more effective during real incidents and simulations.</p>
     <div class="tag-list">
       <span class="tag">Detection Engineering</span>
       <span class="tag">Purple Team Ops</span>
@@ -39,7 +39,7 @@ permalink: /about/
 
 <section class="content-grid">
   <article class="panel">
-    <h2>Arsenal</h2>
+    <h2>Technical Stack</h2>
     <p><strong>Languages:</strong> Python, Bash, C/C++</p>
     <p><strong>Operating Systems:</strong> Kali, Parrot, Ubuntu, Windows, CentOS, Fedora</p>
     <p><strong>Security Platforms:</strong> CrowdStrike, SentinelOne, Wazuh, MISP, Azure Defender, Atomic Red Team, Vectr, GuardYoo, OpenCVE, Uptime Kuma</p>
@@ -47,7 +47,7 @@ permalink: /about/
   </article>
 
   <article class="panel terminal-panel">
-    <h2>Mission Statement</h2>
-    <p>Translate attacker behavior into measurable defensive improvement. Every simulation, detection rule, and investigation should sharpen visibility and reduce response time.</p>
+    <h2>Working Principle</h2>
+    <p>Use attacker behavior, telemetry, and incident findings to improve visibility, detection quality, and response time.</p>
   </article>
 </section>

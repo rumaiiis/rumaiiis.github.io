@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/blaster"
 permalink: "/writeups/tryhackme/blaster/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Blaster"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect blaster</p>
   <h1>Blaster</h1>
-  <p>Windows-focused room covering network service enumeration, exploitation, lateral movement concepts, or Active Directory workflow. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Windows-focused room covering service enumeration, exploitation, and Active Directory concepts. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Windows and AD</strong>.</p>
   <div class="tag-list">
     <span class="tag">Windows and AD</span>
@@ -24,11 +24,11 @@ room_name: "Blaster"
 </section>
 
 <section class="panel">
-  <h2>Workflow Focus</h2>
-  <p>Windows-focused room covering network service enumeration, exploitation, lateral movement concepts, or Active Directory workflow. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
+  <h2>Summary</h2>
+  <p>Windows-focused room covering service enumeration, exploitation, and Active Directory concepts. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -45,10 +45,10 @@ room_name: "Blaster"
 - Privilege escalation depends on Windows post-exploitation, token context, or local service and task behavior.
 - After the foothold, local context matters more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - The main lesson is that Windows management surfaces and legacy services must be hardened because one foothold often becomes full host control quickly.
-## Evidence Pack
+## Collected Output
 
 ### initial-nmap
 

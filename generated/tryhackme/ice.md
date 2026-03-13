@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/ice"
 permalink: "/writeups/tryhackme/ice/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Ice"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect ice</p>
   <h1>Ice</h1>
-  <p>Windows-focused room covering network service enumeration, exploitation, lateral movement concepts, or Active Directory workflow. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Windows-focused room covering service enumeration, exploitation, and Active Directory concepts. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Windows and AD</strong>.</p>
   <div class="tag-list">
     <span class="tag">Windows and AD</span>
@@ -25,7 +25,7 @@ room_name: "Ice"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Ice commonly follows a Metasploit-oriented Windows workflow: identify the vulnerable media service, exploit the target to gain a session, migrate or stabilize access, and complete post-exploitation with privilege-focused enumeration.</p>
   <div class="tag-list">
     <span class="tag">service fingerprinting</span>
@@ -35,7 +35,7 @@ room_name: "Ice"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,13 +52,13 @@ room_name: "Ice"
 - Post-exploitation relies on Windows enumeration and session management rather than a separate complex exploit.
 - The room emphasizes the operator workflow after compromise as much as the exploit itself.
 
-## Defensive Takeaway
+## Security Notes
 
 - Outdated desktop or media services can become remote access paths just as easily as server software.
 - Exploitability matters, but so does what an attacker can do with the first session they obtain.
 - Endpoint hardening and service minimization are still the simplest ways to reduce this type of exposure.
 
-## Supporting Notes
+## Supporting Files
 
 ### Sysytem Info
 
@@ -105,7 +105,7 @@ IP address(es)
 [01]: 10.10.7.193
 [02]: fe80::1bf:73a8:6254:51a8
 
-## Evidence Pack
+## Collected Output
 
 ### initial-nmap
 

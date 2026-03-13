@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/fowsniff-ctf"
 permalink: "/writeups/tryhackme/fowsniff-ctf/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Fowsniff CTF"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect fowsniff-ctf</p>
   <h1>Fowsniff CTF</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Fowsniff CTF"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Fowsniff centers on credential reuse from leaked data. The common path is to gather exposed user information, crack or test recovered passwords, gain shell access through a remote service, and escalate from the low-privilege Linux context.</p>
   <div class="tag-list">
     <span class="tag">OSINT-style data collection</span>
@@ -34,7 +34,7 @@ room_name: "Fowsniff CTF"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Fowsniff CTF"
 - Once the low-privilege shell is in place, standard Linux enumeration reveals the privilege-escalation route.
 - The challenge is designed around chaining leaked identity data into host compromise, not bypassing patched services.
 
-## Defensive Takeaway
+## Security Notes
 
 - User-data leaks remain dangerous because they often include just enough material for password recovery and mailbox compromise.
 - Email access frequently unlocks the rest of the environment because it becomes the reset and secret-distribution channel.
 - Credential hygiene and mailbox protection are part of infrastructure defense, not just user support.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

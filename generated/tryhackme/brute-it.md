@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/brute-it"
 permalink: "/writeups/tryhackme/brute-it/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Brute It"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect brute-it</p>
   <h1>Brute It</h1>
-  <p>General mixed challenge room blending enumeration, exploitation, and post-exploitation practice. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Mixed challenge room covering enumeration, exploitation, and post-exploitation practice. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Challenge Labs</strong>.</p>
   <div class="tag-list">
     <span class="tag">Challenge Labs</span>
@@ -24,7 +24,7 @@ room_name: "Brute It"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>The intended learning path is straightforward web and credential abuse: enumerate services, discover the admin surface, brute-force or recover access, process the RSA material, obtain a user shell, and escalate through the sudo configuration available on the host.</p>
   <div class="tag-list">
     <span class="tag">service enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Brute It"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,11 +51,11 @@ room_name: "Brute It"
 - After the first foothold, the room shifts into post-exploitation and local review.
 - The key escalation themes are RSA key recovery, sudo-based privesc, which complete the move to the final proof material.
 
-## Defensive Takeaway
+## Security Notes
 
 - Brute It reinforces how small exposure points compound when enumeration is disciplined and service relationships are understood.
 - The defensive lesson is to reduce credential reuse, remove unnecessary trust paths, and harden secondary services before they become the pivot.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

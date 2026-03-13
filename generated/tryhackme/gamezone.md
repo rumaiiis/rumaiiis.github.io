@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/gamezone"
 permalink: "/writeups/tryhackme/gamezone/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Game Zone"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect gamezone</p>
   <h1>Game Zone</h1>
-  <p>Web-facing lab centered on application testing, content discovery, misconfiguration abuse, and foothold development. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Web-focused room covering application testing, content discovery, and common attack paths. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Web and App Security</strong>.</p>
   <div class="tag-list">
     <span class="tag">Web and App Security</span>
@@ -24,7 +24,7 @@ room_name: "Game Zone"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>GameZone is usually solved by enumerating the login workflow, exploiting injection or weak validation in the web layer, recovering database-backed information, and using that access to transition into host-level compromise.</p>
   <div class="tag-list">
     <span class="tag">web login analysis</span>
@@ -34,7 +34,7 @@ room_name: "Game Zone"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,13 +51,13 @@ room_name: "Game Zone"
 - Post-login enumeration reveals an internally exposed management interface, typically Webmin, running in a way that can be leveraged locally.
 - That local management surface is then used to escalate from user to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - Authentication forms are high-value attack paths because a single injection flaw can hand over both app and host access.
 - Database-backed secrets remain highly dangerous when users reuse them for SSH or administration.
 - Local-only admin services are still critical exposure if an attacker can land even a basic shell first.
 
-## Supporting Notes
+## Supporting Files
 
 ### Request
 
@@ -76,7 +76,7 @@ Cookie: PHPSESSID=r56osi3hnk89ibtivpj4kadud7
 Upgrade-Insecure-Requests: 1
 searchitem=test
 
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

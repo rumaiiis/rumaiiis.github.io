@@ -6,7 +6,7 @@ permalink: /experience/
 
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# cat operations.log</p>
-  <h1>Mission Log</h1>
+  <h1>Experience</h1>
   <p>A record of roles focused on detection engineering, offensive validation, SOC operations, and infrastructure defense.</p>
 </section>
 

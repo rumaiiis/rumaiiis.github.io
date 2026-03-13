@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/mr-robot"
 permalink: "/writeups/tryhackme/mr-robot/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Mr Robot"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect mr-robot</p>
   <h1>Mr Robot</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -25,7 +25,7 @@ room_name: "Mr Robot"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Mr Robot is typically solved by enumerating the web root and hidden files, recovering credentials from site content, logging into WordPress, abusing plugin or theme execution for a shell, and escalating locally after stabilizing access.</p>
   <div class="tag-list">
     <span class="tag">content discovery</span>
@@ -36,7 +36,7 @@ room_name: "Mr Robot"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -53,12 +53,12 @@ room_name: "Mr Robot"
 - After landing on the host, the next credential pivot comes from the restricted user material stored locally.
 - The final step uses a SUID-enabled `nmap` binary to jump from the user context to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - Login error messages should never help an attacker separate valid usernames from invalid ones.
 - Web application admin access must be treated as near-host compromise when file editing or code execution is available.
 - Old SUID-enabled tooling remains a direct privilege-escalation path on Linux systems.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

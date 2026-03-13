@@ -7,12 +7,12 @@ permalink: /contact/
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# establish-session --contact</p>
   <h1>Contact</h1>
-  <p>For collaboration, consulting, detection engineering work, or security-focused discussions, use the channels below or drop a message through the terminal form.</p>
+  <p>For collaboration, consulting, or security work, use the links below or send a message through the form.</p>
 </section>
 
 <section class="contact-grid">
   <article class="panel">
-    <h2>Signal Paths</h2>
+    <h2>Links</h2>
     <ul>
       <li>LinkedIn: <a href="https://www.linkedin.com/in/rumais-pp/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rumais-pp</a></li>
       <li>Website: <a href="https://rumaiiis.github.io" target="_blank" rel="noopener noreferrer">rumaiiis.github.io</a></li>
@@ -32,7 +32,7 @@ permalink: /contact/
   </article>
 
   <article class="panel form-shell">
-    <h2>Message Queue</h2>
+    <h2>Send a Message</h2>
     <form class="terminal-form" action="https://formsubmit.co/rumaisbinmajeed@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="Portfolio contact submission">
       <input type="hidden" name="_next" value="https://rumaiiis.github.io/contact/">
@@ -40,16 +40,16 @@ permalink: /contact/
       <input type="hidden" name="_captcha" value="false">
 
       <label for="name">name:</label>
-      <input type="text" id="name" name="name" placeholder="operator name" autocomplete="name" required>
+      <input type="text" id="name" name="name" placeholder="your name" autocomplete="name" required>
 
       <label for="email">email:</label>
-      <input type="email" id="email" name="email" placeholder="reply channel" autocomplete="email" inputmode="email" required>
+      <input type="email" id="email" name="email" placeholder="your email" autocomplete="email" inputmode="email" required>
 
       <label for="message">message:</label>
-      <textarea rows="6" id="message" name="message" placeholder="state your mission..." required></textarea>
+      <textarea rows="6" id="message" name="message" placeholder="your message" required></textarea>
 
-      <input type="submit" value="[ queue transmission ]">
+      <input type="submit" value="[ send ]">
     </form>
-    <p class="form-note">Messages are routed to rumaisbinmajeed@gmail.com. After the first live submission, confirm the verification email from FormSubmit to activate delivery.</p>
+    <p class="form-note">Messages are routed to rumaisbinmajeed@gmail.com. If this is the first live submission, confirm the verification email from FormSubmit to activate delivery.</p>
   </article>
 </section>

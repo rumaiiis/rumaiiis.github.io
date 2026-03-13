@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/ignite"
 permalink: "/writeups/tryhackme/ignite/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Ignite"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect ignite</p>
   <h1>Ignite</h1>
-  <p>Web-facing lab centered on application testing, content discovery, misconfiguration abuse, and foothold development. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Web-focused room covering application testing, content discovery, and common attack paths. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Web and App Security</strong>.</p>
   <div class="tag-list">
     <span class="tag">Web and App Security</span>
@@ -24,7 +24,7 @@ room_name: "Ignite"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Ignite is generally a Fuel CMS exploitation room. The normal path is to confirm the vulnerable CMS version, exploit the known RCE issue, establish a shell, harvest local credentials or configuration values, and then escalate on the Linux host.</p>
   <div class="tag-list">
     <span class="tag">Fuel CMS fingerprinting</span>
@@ -35,7 +35,7 @@ room_name: "Ignite"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,11 +52,11 @@ room_name: "Ignite"
 - After the first foothold, the room shifts into post-exploitation and local review.
 - The key escalation themes are shell establishment, credential harvesting, which complete the move to the final proof material.
 
-## Defensive Takeaway
+## Security Notes
 
 - Ignite reinforces how small exposure points compound when enumeration is disciplined and service relationships are understood.
 - The defensive lesson is to reduce credential reuse, remove unnecessary trust paths, and harden secondary services before they become the pivot.
-## Evidence Pack
+## Collected Output
 
 ### nmap-full_port
 

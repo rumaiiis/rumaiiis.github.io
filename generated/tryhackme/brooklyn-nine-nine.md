@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/brooklyn-nine-nine"
 permalink: "/writeups/tryhackme/brooklyn-nine-nine/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Brooklyn Nine-Nine"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect brooklyn-nine-nine</p>
   <h1>Brooklyn Nine-Nine</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -25,7 +25,7 @@ room_name: "Brooklyn Nine-Nine"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Most walkthroughs for this room follow a lightweight Linux CTF path: enumerate FTP/SSH/HTTP, recover the note or credential hint, gain SSH access, check sudo rights, and escalate with the permitted binary through a GTFOBins-style technique.</p>
   <div class="tag-list">
     <span class="tag">FTP enumeration</span>
@@ -35,7 +35,7 @@ room_name: "Brooklyn Nine-Nine"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,19 +52,19 @@ room_name: "Brooklyn Nine-Nine"
 - After the first foothold, the room shifts into post-exploitation and local review.
 - The key escalation themes are SSH access, sudo abuse, which complete the move to the final proof material.
 
-## Defensive Takeaway
+## Security Notes
 
 - Brooklyn Nine-Nine reinforces how small exposure points compound when enumeration is disciplined and service relationships are understood.
 - The defensive lesson is to reduce credential reuse, remove unnecessary trust paths, and harden secondary services before they become the pivot.
 
-## Supporting Notes
+## Supporting Files
 
 ### Note To Jake
 
 From Amy,
 Jake please change your password. It is too weak and holt will be mad if someone hacks into the nine nine
 
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

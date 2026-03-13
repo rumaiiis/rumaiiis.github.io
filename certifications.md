@@ -6,7 +6,7 @@ permalink: /certifications/
 
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# ls /opt/credentials</p>
-  <h1>Verified Credentials</h1>
+  <h1>Certifications</h1>
   <p>Certifications, platforms, and field training that support detection engineering, purple-team operations, and security validation.</p>
 </section>
 
@@ -54,7 +54,7 @@ permalink: /certifications/
   </article>
 
   <article class="panel">
-    <h2>Capability Matrix</h2>
+    <h2>Skills</h2>
     <div class="tag-list">
       <span class="tag">SOC Monitoring</span>
       <span class="tag">SIEM Engineering</span>
@@ -96,7 +96,7 @@ permalink: /certifications/
 
 <section class="content-grid">
   <article class="panel">
-    <h2>Training Pipeline</h2>
+    <h2>Training</h2>
     <ul>
       <li>Practical Ethical Hacking (TCM Security)</li>
       <li>Penetration Testing Student (INE)</li>
@@ -107,7 +107,7 @@ permalink: /certifications/
   </article>
 
   <article class="panel">
-    <h2>Field Events</h2>
+    <h2>Events</h2>
     <ul>
       <li>Red Team Security Summit 2020</li>
       <li>Cyber Red Teaming and Art of Ethical Hacking workshop, Red Team Security Summit 2020</li>

@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/skynet"
 permalink: "/writeups/tryhackme/skynet/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Skynet"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect skynet</p>
   <h1>Skynet</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Skynet"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Skynet commonly combines SMB and web enumeration: discover accessible shares, recover credentials or hints, pivot through the application layer, gain shell access, and finish with a cron, script, or file-permission based privilege escalation path.</p>
   <div class="tag-list">
     <span class="tag">SMB enumeration</span>
@@ -35,7 +35,7 @@ room_name: "Skynet"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,13 +52,13 @@ room_name: "Skynet"
 - After the user shell is established, the final step depends on local file permissions, writable scripts, or scheduled execution paths.
 - The escalation route is more about chaining recovered access cleanly than forcing a single complex exploit.
 
-## Defensive Takeaway
+## Security Notes
 
 - Shared secrets across SMB, mail, and web services make multi-service environments much easier to break than they appear from outside.
 - Hidden application paths are not protection; they only delay discovery until enumeration catches up.
 - Internal scripts and automation need the same hardening attention as public-facing services.
 
-## Supporting Notes
+## Supporting Files
 
 ### Attention
 
@@ -105,7 +105,7 @@ Walterminator
 79terminator6
 1996terminator
 
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

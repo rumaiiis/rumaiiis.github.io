@@ -5,15 +5,15 @@ title: /
 <section class="hero-panel">
   <p class="eyebrow">root@rumais:~# whoami</p>
   <h1 class="hero-title"><span id="typing-effect"></span></h1>
-  <p class="hero-summary">Detection engineer and threat operator focused on exposing adversary tradecraft, weaponizing telemetry into high-fidelity detections, and hardening defensive coverage through simulation-led validation.</p>
+  <p class="hero-summary">Cyber Threat Detection Engineer with experience in SOC operations, SIEM deployment, threat simulation, and detection engineering.</p>
 
   <div class="status-grid">
     <div class="status-card">
-      <span class="status-label">Active Domain</span>
+      <span class="status-label">Current Focus</span>
       <strong>Detection Engineering | Purple Team Operations</strong>
     </div>
     <div class="status-card">
-      <span class="status-label">Detection Stack</span>
+      <span class="status-label">Core Stack</span>
       <strong>Wazuh SIEM, CrowdStrike and SentinelOne EDR/XDR, Atomic Red Team, VECTR, Sigma, YARA, MISP, Azure Defender</strong>
     </div>
   </div>
@@ -21,23 +21,23 @@ title: /
 
 <section class="content-grid">
   <article class="panel">
-    <h2>Operator Brief</h2>
-    <p>I work across detection engineering, SOC operations, and threat simulation. The focus is to emulate adversary behavior, inspect telemetry, identify defensive gaps, and translate those findings into stronger detections and faster response workflows.</p>
+    <h2>Profile</h2>
+    <p>I work across detection engineering, SOC monitoring, and threat simulation. My work focuses on testing defensive visibility, improving detection quality, and helping response teams act faster with better telemetry.</p>
   </article>
 
   <article class="panel">
-    <h2>Active Objectives</h2>
+    <h2>What I Work On</h2>
     <ul>
-      <li>Strengthen detection coverage by exposing visibility gaps and tuning high-fidelity rules.</li>
-      <li>Map adversary tradecraft to MITRE ATT&amp;CK and validate defensive controls through simulation.</li>
-      <li>Support SOC operations with practical analysis, reporting, and response-driven engineering.</li>
+      <li>Improve detection coverage by finding visibility gaps and tuning rules.</li>
+      <li>Map attacker behavior to MITRE ATT&amp;CK and validate controls through simulation.</li>
+      <li>Support SOC teams with practical analysis, reporting, and response improvements.</li>
     </ul>
   </article>
 </section>
 
 <section class="content-grid">
   <article class="panel">
-    <h2>Tactical Focus</h2>
+    <h2>Focus Areas</h2>
     <div class="tag-list">
       <span class="tag">SOC Monitoring</span>
       <span class="tag">SIEM Implementation</span>
@@ -51,7 +51,7 @@ title: /
   </article>
 
   <article class="panel">
-    <h2>Operator Toolchain</h2>
+    <h2>Tools</h2>
     <div class="tag-list">
       <span class="tag">Python</span>
       <span class="tag">Bash</span>

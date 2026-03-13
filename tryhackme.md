@@ -14,8 +14,8 @@ permalink: /writeups/tryhackme/
 
 <section class="page-hero panel" id="top">
   <p class="eyebrow">root@rumais:~# open archive://tryhackme-map</p>
-  <h1>TryHackMe Map</h1>
-  <p>Visual knowledge map for the complete TryHackMe archive. Rooms are grouped by learning track so visitors can move through Windows, web, Linux, recon, and challenge labs without scanning one long page.</p>
+  <h1>TryHackMe Archive</h1>
+  <p>Complete TryHackMe archive grouped by topic so it is easier to browse, search, and open individual rooms.</p>
 </section>
 
 <section class="archive-shell">

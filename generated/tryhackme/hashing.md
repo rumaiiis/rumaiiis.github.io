@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/hashing"
 permalink: "/writeups/tryhackme/hashing/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Hashing"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect hashing</p>
   <h1>Hashing</h1>
-  <p>Skill-building room for reconnaissance, tooling, cracking, packet analysis, or security fundamentals. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Skill-building room covering reconnaissance, tooling, cracking, packet analysis, or security basics. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Recon and Fundamentals</strong>.</p>
   <div class="tag-list">
     <span class="tag">Recon and Fundamentals</span>
@@ -23,11 +23,11 @@ room_name: "Hashing"
 </section>
 
 <section class="panel">
-  <h2>Workflow Focus</h2>
-  <p>Skill-building room for reconnaissance, tooling, cracking, packet analysis, or security fundamentals. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
+  <h2>Summary</h2>
+  <p>Skill-building room covering reconnaissance, tooling, cracking, packet analysis, or security basics. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -44,6 +44,6 @@ room_name: "Hashing"
 - If host access is part of the path, the post-exploitation steps are typically lightweight and focused on proof recovery rather than heavy exploitation.
 - After the foothold, local context matters more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - The defensive lesson is that information exposure and weak operational practice often matter just as much as software vulnerabilities.

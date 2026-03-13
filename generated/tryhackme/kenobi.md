@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/kenobi"
 permalink: "/writeups/tryhackme/kenobi/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Kenobi"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect kenobi</p>
   <h1>Kenobi</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Kenobi"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>The standard Kenobi path is to enumerate SMB and NFS exposure, recover SSH key clues from the anonymous share, abuse the vulnerable ProFTPD copy commands to move the private key into a mountable location, log in over SSH, and finish with PATH hijacking against a SUID binary.</p>
   <div class="tag-list">
     <span class="tag">SMB share discovery</span>
@@ -35,7 +35,7 @@ room_name: "Kenobi"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -55,13 +55,13 @@ room_name: "Kenobi"
 - String inspection shows commands being called without absolute paths, which makes `PATH` hijacking the intended escalation route.
 - By placing a controlled binary earlier in `PATH`, the SUID program can be coerced into spawning a root shell.
 
-## Defensive Takeaway
+## Security Notes
 
 - Anonymous SMB shares often leak more operational context than expected.
 - Exposed NFS paths and legacy FTP services are dangerous when combined with a write or copy primitive.
 - SUID programs that call external binaries without full paths are a recurring Linux privilege-escalation flaw.
 
-## Supporting Notes
+## Supporting Files
 
 ### Log
 
@@ -75,7 +75,7 @@ Your public key has been saved in /home/kenobi/.ssh/id_rsa.pub.
 The key fingerprint is:
 SHA256:C17GWSl/v7KlUZrOwWxSyk+F7gYhVzsbfqkCIkr2d7Q kenobi@kenobi
 The key's randomart image is:
-+---[RSA 2048]---[redacted]
++---[RSA 2048]----+
 |                 |
 |           ..    |
 |        . o. .   |
@@ -85,7 +85,7 @@ The key's randomart image is:
 | o o ..o.o+.@oo  |
 |  . . . E .O+= . |
 |     . .   oBo.  |
-+---[redacted][SHA256]---[redacted]
++----[SHA256]-----+
 # This is a basic ProFTPD configuration file (rename it to
 # 'proftpd.conf' for actual use.  It establishes a single server
 # and a single anonymous login.  It assumes that you have a user/group
@@ -140,7 +140,7 @@ DenyAll
 #
 # Samp
 
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

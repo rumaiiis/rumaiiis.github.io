@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/wgel-ctf"
 permalink: "/writeups/tryhackme/wgel-ctf/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Wgel CTF"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect wgel-ctf</p>
   <h1>Wgel CTF</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Wgel CTF"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Wgel CTF is commonly approached through web directory discovery, username and SSH key recovery, access to a Linux user account, and local privilege escalation using misconfigured writable or executable paths.</p>
   <div class="tag-list">
     <span class="tag">directory enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Wgel CTF"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Wgel CTF"
 - Local enumeration shows a permissive `sudo` rule for `wget`.
 - That delegated binary can be abused to overwrite sensitive files or redirect privileged file operations, leading to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - Publishing `.ssh` material under a web path is an immediate compromise condition, not a minor leakage issue.
 - Key-based access is only stronger than passwords if the private key stays private.
 - Even narrow `sudo` access to file-handling utilities like `wget` can be enough for full compromise.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-dirb-common-sitemap
 

@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/bountyhacker"
 permalink: "/writeups/tryhackme/bountyhacker/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Bounty Hacker"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect bountyhacker</p>
   <h1>Bounty Hacker</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Bounty Hacker"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Public walkthroughs consistently solve Bounty Hacker by enumerating FTP, SSH, and HTTP, extracting a task list from exposed content, using the recovered wordlist against SSH, landing a low-privilege shell, and escalating with a sudo-allowed GTFOBins path.</p>
   <div class="tag-list">
     <span class="tag">multi-service enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Bounty Hacker"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,13 +51,13 @@ room_name: "Bounty Hacker"
 - After landing the user shell, local enumeration reveals a sudo-allowed binary or command path that can be abused for escalation.
 - The final step is a straightforward GTFOBins-style move from user to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - Small operational notes can expose enough context to collapse the attacker’s enumeration time.
 - Reused or weak credentials turn even a short wordlist into a practical remote-access path.
 - Sudo delegation should always be reviewed with shell-escape paths in mind.
 
-## Supporting Notes
+## Supporting Files
 
 ### Locks
 
@@ -94,7 +94,7 @@ ReDSynd1ca7e
 2.) Plan for Red Eye pickup on the moon.
 -lin
 
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

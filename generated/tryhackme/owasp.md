@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/owasp"
 permalink: "/writeups/tryhackme/owasp/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Owasp"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect owasp</p>
   <h1>Owasp</h1>
-  <p>Web-facing lab centered on application testing, content discovery, misconfiguration abuse, and foothold development. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Web-focused room covering application testing, content discovery, and common attack paths. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Web and App Security</strong>.</p>
   <div class="tag-list">
     <span class="tag">Web and App Security</span>
@@ -23,11 +23,11 @@ room_name: "Owasp"
 </section>
 
 <section class="panel">
-  <h2>Workflow Focus</h2>
-  <p>Web-facing lab centered on application testing, content discovery, misconfiguration abuse, and foothold development. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
+  <h2>Summary</h2>
+  <p>Web-focused room covering application testing, content discovery, and common attack paths. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -44,11 +44,11 @@ room_name: "Owasp"
 - Once the app is compromised, the next step is to stabilize host access and enumerate for the final path to proof material.
 - After the foothold, local context matters more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - The defensive lesson is that web compromise rarely stays in the web tier when secrets, upload paths, or admin functions are exposed.
 
-## Supporting Notes
+## Supporting Files
 
 ### 48960
 

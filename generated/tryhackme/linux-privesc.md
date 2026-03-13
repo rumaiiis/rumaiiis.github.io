@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/linux-privesc"
 permalink: "/writeups/tryhackme/linux-privesc/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Linux Privesc"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect linux-privesc</p>
   <h1>Linux Privesc</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -23,11 +23,11 @@ room_name: "Linux Privesc"
 </section>
 
 <section class="panel">
-  <h2>Workflow Focus</h2>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
+  <h2>Summary</h2>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -44,11 +44,11 @@ room_name: "Linux Privesc"
 - Privilege escalation depends on local enumeration, trust abuse, writable automation, or delegated execution paths on the host.
 - After the foothold, local context matters more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - The defensive lesson is that Linux post-exploitation paths are usually avoidable with better secret handling and tighter local permissions.
 
-## Supporting Notes
+## Supporting Files
 
 ### Checklists
 

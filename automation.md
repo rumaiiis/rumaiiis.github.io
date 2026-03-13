@@ -41,6 +41,6 @@ permalink: /writeups/automation/
 </section>
 
 <section class="panel">
-  <h2>Operator Use</h2>
-  <p>The goal of these scripts is not to replace standard tools. They exist to show practical scripting ability, workflow automation, and the habit of building small helpers when a task is repetitive enough to justify it.</p>
+  <h2>Why These Scripts Matter</h2>
+  <p>These scripts are not meant to replace standard tools. They show practical scripting ability, workflow automation, and the habit of building small helpers when a task becomes repetitive.</p>
 </section>

@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/easypeasy"
 permalink: "/writeups/tryhackme/easypeasy/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Easy Peasy"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect easypeasy</p>
   <h1>Easy Peasy</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Easy Peasy"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Easy Peasy is usually approached as a staged Linux/web challenge: enumerate multiple HTTP surfaces, recover clues and hashes from hidden content, crack the supplied materials, pivot to SSH, and complete privilege escalation through a writable scheduled-task or weak automation path.</p>
   <div class="tag-list">
     <span class="tag">multi-port web enumeration</span>
@@ -35,7 +35,7 @@ room_name: "Easy Peasy"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,13 +52,13 @@ room_name: "Easy Peasy"
 - Post-exploitation focuses on weak automation or writable scheduled-task behavior.
 - The path to root is not about a kernel exploit; it is about careful local enumeration and abuse of the host’s automation workflow.
 
-## Defensive Takeaway
+## Security Notes
 
 - Multi-port web exposure increases the chance that a hidden or less-monitored application becomes the real point of compromise.
 - Recoverable hashes are effectively credentials once an attacker has enough context to crack them.
 - Cron jobs and writable automation paths remain one of the most common avoidable Linux privilege-escalation problems.
 
-## Supporting Notes
+## Supporting Files
 
 ### Easypeasy
 
@@ -93,7 +93,7 @@ iloveu
 000000
 michelle
 tigger
-[redacted]
+sunshine
 12345678
 abc123
 nicole
@@ -155,9 +155,9 @@ qwerty
 111111
 iloveu
 tigger
-[redacted]
+sunshine
 chocolate
-[redacted]
+password1
 soccer
 anthony
 paintball
@@ -186,9 +186,9 @@ iloveu
 000000
 michelle
 tigger
-[redacted]
+sunshine
 chocolate
-[redacted]
+password1
 soccer
 anthony
 fresa
@@ -226,7 +226,7 @@ ANDREA
 19871987
 waters
 vampires
-[redacted]
+password1
 soccer
 anthony
 friends
@@ -237,7 +237,7 @@ ANDREA
 19871987
 waters
 vampires
-[redacted]
+password1
 soccer
 anthony
 friends
@@ -389,9 +389,9 @@ ObsJmP173N2X6dOrAgEAL0Vu
 ### Secrettext
 
 username:boring
-password: [redacted] sensitive value] sensitive value] 01100011 01101111 01101110 01110110 01100101 01110010 01110100 01100101 01100100 01101101 01111001 01110000 01100001 01110011 01110011 01110111 01101111 01110010 01100100 01110100 01101111 01100010 01101001 01101110 01100001 01110010 01111001
+password: [redacted sensitive value] sensitive value] 01100011 01101111 01101110 01110110 01100101 01110010 01110100 01100101 01100100 01101101 01111001 01110000 01100001 01110011 01110011 01110111 01101111 01110010 01100100 01110100 01101111 01100010 01101001 01101110 01100001 01110010 01111001
 
-## Evidence Pack
+## Collected Output
 
 ### gobuster-apache
 

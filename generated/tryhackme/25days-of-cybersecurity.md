@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/25days-of-cybersecurity"
 permalink: "/writeups/tryhackme/25days-of-cybersecurity/"
 platform: "TryHackMe"
@@ -10,7 +10,7 @@ series_name: "Advent of Cyber 2020"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect 25days-of-cybersecurity</p>
   <h1>Advent of Cyber 2020</h1>
-  <p>Series archive for Advent of Cyber 2020. Use this as a structured entry point into the seasonal challenge notes and day-wise writeups.</p>
+  <p>Collection page for Advent of Cyber 2020 with links to the available day-by-day notes.</p>
 </section>
 
 {% assign series_posts = site.posts | where: "series", page.series_name %}

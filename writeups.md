@@ -17,7 +17,7 @@ permalink: /writeups/
 
 <section class="archive-shell">
   <article class="panel">
-    <h2>Archive Tree</h2>
+    <h2>Sections</h2>
     <div class="tree-nav">
       <div class="tree-node">
         <span class="tree-root">/writeups</span>
@@ -45,19 +45,19 @@ permalink: /writeups/
       <div class="tree-branch">
         <a class="tree-link" href="/writeups/htb/">
           <strong>Hack The Box</strong>
-          <span>selected operator notes</span>
+          <span>selected writeups</span>
         </a>
       </div>
       <div class="tree-branch">
         <a class="tree-link" href="/writeups/playbooks/">
           <strong>Playbooks</strong>
-          <span>reusable workflows and notes</span>
+          <span>reusable notes and workflows</span>
         </a>
       </div>
       <div class="tree-branch">
         <a class="tree-link" href="/writeups/automation/">
           <strong>Automation</strong>
-          <span>scripts and helper tooling</span>
+          <span>scripts and helper tools</span>
         </a>
       </div>
       <div class="tree-branch">

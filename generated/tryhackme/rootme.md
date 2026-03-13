@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/rootme"
 permalink: "/writeups/tryhackme/rootme/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Root Me"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect rootme</p>
   <h1>Root Me</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Root Me"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Root Me usually follows a file-upload-to-shell path: enumerate the web application, bypass upload filtering, gain a shell on the host, and escalate through SUID or other local privilege-escalation opportunities.</p>
   <div class="tag-list">
     <span class="tag">web enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Root Me"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Root Me"
 - The main privilege-escalation clue is a SUID-enabled binary.
 - Abusing the Python SUID path through a GTFOBins technique yields the root shell.
 
-## Defensive Takeaway
+## Security Notes
 
 - Upload validation must include extension handling, execution policy, and storage isolation or it becomes direct code execution.
 - Web-to-shell compromise often happens long before defenders notice anything at the SSH layer.
 - SUID misconfigurations are high-impact because they turn a basic foothold into full system compromise with minimal noise.
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/colddbox-easy"
 permalink: "/writeups/tryhackme/colddbox-easy/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "ColddBox Easy"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect colddbox-easy</p>
   <h1>ColddBox Easy</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "ColddBox Easy"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>ColddBox Easy is generally approached by enumerating WordPress, finding weak or reused credentials, leveraging the application for initial access, and then escalating locally through misconfiguration or exposed credential material on the box.</p>
   <div class="tag-list">
     <span class="tag">WordPress enumeration</span>
@@ -34,7 +34,7 @@ room_name: "ColddBox Easy"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,11 +51,11 @@ room_name: "ColddBox Easy"
 - After the first foothold, the room shifts into post-exploitation and local review.
 - The key escalation themes are web-to-shell workflow, local privilege escalation, which complete the move to the final proof material.
 
-## Defensive Takeaway
+## Security Notes
 
 - ColddBox Easy reinforces how small exposure points compound when enumeration is disciplined and service relationships are understood.
 - The defensive lesson is to reduce credential reuse, remove unnecessary trust paths, and harden secondary services before they become the pivot.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

@@ -307,7 +307,7 @@ CURATED_ROOM_NOTES = {
 - Once the Linux user shell is established, local enumeration shows a permissive `sudo` configuration.
 - The escalation path maps to `CVE-2019-14287`, where a sudo rule can be abused to execute commands as root despite an apparent restriction.
 
-## Defensive Takeaway
+## Security Notes
 
 - Treat client-controlled headers as untrusted, but remember they can still expose workflow clues or logic differences during testing.
 - Hidden data in images and archives is a common challenge pattern and a good reminder to inspect artifacts, not just obvious files.
@@ -331,7 +331,7 @@ CURATED_ROOM_NOTES = {
 - String inspection shows commands being called without absolute paths, which makes `PATH` hijacking the intended escalation route.
 - By placing a controlled binary earlier in `PATH`, the SUID program can be coerced into spawning a root shell.
 
-## Defensive Takeaway
+## Security Notes
 
 - Anonymous SMB shares often leak more operational context than expected.
 - Exposed NFS paths and legacy FTP services are dangerous when combined with a write or copy primitive.
@@ -354,7 +354,7 @@ CURATED_ROOM_NOTES = {
 - The local user has a useful `sudo` permission on `vim`.
 - That leads to a direct `GTFOBins`-style escalation path and root shell access.
 
-## Defensive Takeaway
+## Security Notes
 
 - Directory enumeration still pays off against small CMS deployments because hidden admin panels and secondary paths often expose the real attack surface.
 - Public CMS exploits become much more dangerous when paired with password reuse between the app and the operating system.
@@ -375,7 +375,7 @@ CURATED_ROOM_NOTES = {
 - After landing the user shell, local enumeration reveals a sudo-allowed binary or command path that can be abused for escalation.
 - The final step is a straightforward GTFOBins-style move from user to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - Small operational notes can expose enough context to collapse the attacker’s enumeration time.
 - Reused or weak credentials turn even a short wordlist into a practical remote-access path.
@@ -396,7 +396,7 @@ CURATED_ROOM_NOTES = {
 - Post-exploitation focuses on weak automation or writable scheduled-task behavior.
 - The path to root is not about a kernel exploit; it is about careful local enumeration and abuse of the host’s automation workflow.
 
-## Defensive Takeaway
+## Security Notes
 
 - Multi-port web exposure increases the chance that a hidden or less-monitored application becomes the real point of compromise.
 - Recoverable hashes are effectively credentials once an attacker has enough context to crack them.
@@ -417,7 +417,7 @@ CURATED_ROOM_NOTES = {
 - Once code execution is established, the room moves into Linux post-exploitation.
 - The escalation route depends on local misconfiguration and execution context rather than a public kernel exploit.
 
-## Defensive Takeaway
+## Security Notes
 
 - Development pages and test endpoints are often the weakest link in otherwise small web stacks.
 - LFI should never be treated as “just file read” because it often becomes shell access when paired with writable logs or scriptable inputs.
@@ -438,7 +438,7 @@ CURATED_ROOM_NOTES = {
 - The main privilege-escalation clue is a SUID-enabled binary.
 - Abusing the Python SUID path through a GTFOBins technique yields the root shell.
 
-## Defensive Takeaway
+## Security Notes
 
 - Upload validation must include extension handling, execution policy, and storage isolation or it becomes direct code execution.
 - Web-to-shell compromise often happens long before defenders notice anything at the SSH layer.
@@ -459,7 +459,7 @@ CURATED_ROOM_NOTES = {
 - After the user shell is established, the final step depends on local file permissions, writable scripts, or scheduled execution paths.
 - The escalation route is more about chaining recovered access cleanly than forcing a single complex exploit.
 
-## Defensive Takeaway
+## Security Notes
 
 - Shared secrets across SMB, mail, and web services make multi-service environments much easier to break than they appear from outside.
 - Hidden application paths are not protection; they only delay discovery until enumeration catches up.
@@ -480,7 +480,7 @@ CURATED_ROOM_NOTES = {
 - Local enumeration shows a permissive `sudo` rule for `wget`.
 - That delegated binary can be abused to overwrite sensitive files or redirect privileged file operations, leading to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - Publishing `.ssh` material under a web path is an immediate compromise condition, not a minor leakage issue.
 - Key-based access is only stronger than passwords if the private key stays private.
@@ -502,7 +502,7 @@ CURATED_ROOM_NOTES = {
 - Once higher-privileged credentials are recovered from application files and configuration data, the attack shifts into host access and local privilege escalation.
 - The final step is less about a single public exploit and more about chaining the trust failures already present in the application stack.
 
-## Defensive Takeaway
+## Security Notes
 
 - Validation differences between registration and login paths can become authentication bypass conditions.
 - XML parsers with unsafe external-entity handling turn ordinary features into file-read and secret-extraction primitives.
@@ -523,7 +523,7 @@ CURATED_ROOM_NOTES = {
 - Once code execution is available through the CMS, the remaining work is to stabilize the Linux shell and enumerate locally for proof material.
 - The room emphasizes web-to-host compromise more than a separate complex root exploit.
 
-## Defensive Takeaway
+## Security Notes
 
 - Secondary application ports are often more important than the default website and should not be treated as less sensitive.
 - CMS administrator access is already high-impact; patch lag and credential reuse make it even worse.
@@ -544,7 +544,7 @@ CURATED_ROOM_NOTES = {
 - After the SSH foothold, local enumeration drives the rest of the room.
 - The box is designed to reward artifact analysis and credential recovery more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - Backup systems are highly sensitive because they frequently contain both data and operational secrets.
 - Reusing credentials across backup tooling and user access paths multiplies the impact of a single leak.
@@ -565,7 +565,7 @@ CURATED_ROOM_NOTES = {
 - Once the low-privilege shell is in place, standard Linux enumeration reveals the privilege-escalation route.
 - The challenge is designed around chaining leaked identity data into host compromise, not bypassing patched services.
 
-## Defensive Takeaway
+## Security Notes
 
 - User-data leaks remain dangerous because they often include just enough material for password recovery and mailbox compromise.
 - Email access frequently unlocks the rest of the environment because it becomes the reset and secret-distribution channel.
@@ -586,7 +586,7 @@ CURATED_ROOM_NOTES = {
 - Post-login enumeration reveals an internally exposed management interface, typically Webmin, running in a way that can be leveraged locally.
 - That local management surface is then used to escalate from user to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - Authentication forms are high-value attack paths because a single injection flaw can hand over both app and host access.
 - Database-backed secrets remain highly dangerous when users reuse them for SSH or administration.
@@ -607,7 +607,7 @@ CURATED_ROOM_NOTES = {
 - Once on the host, the privilege-escalation route depends on local scripts, weak trust boundaries, or sudo-assisted execution.
 - The room is designed to show how quickly a “small” CMS issue becomes full compromise when secrets are exposed.
 
-## Defensive Takeaway
+## Security Notes
 
 - Backup files inside the web root are effectively credential disclosure.
 - CMS admin panels should never have the ability to drop executable content without strict controls.
@@ -628,7 +628,7 @@ CURATED_ROOM_NOTES = {
 - After landing on the host, the next credential pivot comes from the restricted user material stored locally.
 - The final step uses a SUID-enabled `nmap` binary to jump from the user context to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - Login error messages should never help an attacker separate valid usernames from invalid ones.
 - Web application admin access must be treated as near-host compromise when file editing or code execution is available.
@@ -649,7 +649,7 @@ CURATED_ROOM_NOTES = {
 - Post-exploitation focuses on writable scripts or trusted execution paths that run under a higher-privilege user.
 - The box rewards careful inspection of local automation and delegated execution rather than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - Small hostname clues can hide the real attack surface from casual testing, but not from structured enumeration.
 - File-read issues frequently become credential compromise once application data and local scripts are exposed.
@@ -670,7 +670,7 @@ CURATED_ROOM_NOTES = {
 - After the SSH foothold, local enumeration and the hidden `s3cr3t` clue expose the path to the next user and finally to root.
 - The final escalation hinges on a vulnerable `sudo` path combined with an allowed editor or delegated command.
 
-## Defensive Takeaway
+## Security Notes
 
 - Static assets, redirects, and media files can leak as much as dynamic endpoints when attackers inspect them properly.
 - Obscure encodings and esoteric formats are not protection; they only delay basic analysis.
@@ -691,7 +691,7 @@ CURATED_ROOM_NOTES = {
 - After login, local enumeration becomes the deciding factor.
 - The final escalation depends on host weakness rather than application logic, and the room rewards thorough post-exploitation review.
 
-## Defensive Takeaway
+## Security Notes
 
 - Small clue leaks across multiple services often combine into a full credential path even if each single leak looks harmless.
 - Shared secrets between SMB, FTP, and SSH reduce an attacker’s workload dramatically.
@@ -712,7 +712,7 @@ CURATED_ROOM_NOTES = {
 - During local enumeration, the packet capture becomes the source of the user credential, which moves the shell into a stronger user context.
 - The final step depends on identifying a root-owned automation path and replacing or influencing the script it executes.
 
-## Defensive Takeaway
+## Security Notes
 
 - Anonymous writable FTP plus web-served content is effectively remote code execution waiting to happen.
 - Internal network captures often leak much more than intended, including passwords and workflow clues.
@@ -733,7 +733,7 @@ CURATED_ROOM_NOTES = {
 - Once on the host, the room shifts into artifact-driven Linux escalation.
 - Backup or private-key material left on disk provides the next pivot, and local trust relationships complete the final move to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - AJP should not be exposed broadly, especially on older Tomcat deployments.
 - Configuration and backup files often hold enough secrets to turn a file-read bug into full host access.
@@ -754,7 +754,7 @@ CURATED_ROOM_NOTES = {
 - The escalation step relies on Windows token context and privilege abuse rather than a network exploit.
 - Once the session is stabilized, the attacker can impersonate or leverage a higher-privileged token to reach `SYSTEM`.
 
-## Defensive Takeaway
+## Security Notes
 
 - CI/CD platforms are high-impact assets because build execution is effectively remote code execution by design.
 - Alternate admin ports should be treated as core production exposure, not “secondary” services.
@@ -775,7 +775,7 @@ CURATED_ROOM_NOTES = {
 - The privilege-escalation phase is more about expanding domain access and reading the right protected material than forcing a single exploit.
 - Standard AD post-exploitation workflow and careful enumeration lead to the final flags.
 
-## Defensive Takeaway
+## Security Notes
 
 - User enumeration and Kerberos abuse remain highly effective against weakly hardened domains.
 - Good password policy, pre-auth enforcement, and account monitoring materially reduce the success rate of these workflows.
@@ -796,7 +796,7 @@ CURATED_ROOM_NOTES = {
 - The exploit itself effectively provides a high-privilege context, so the remaining work is to stabilize access and recover the proof material.
 - The box is designed to teach the exploitation chain and the basic post-exploitation workflow that follows.
 
-## Defensive Takeaway
+## Security Notes
 
 - Legacy SMB exposure remains one of the clearest examples of how a single unpatched service can become full host compromise.
 - Network segmentation and aggressive patching are still the most important defenses against exploit chains like EternalBlue.
@@ -817,7 +817,7 @@ CURATED_ROOM_NOTES = {
 - Once on the host, the path to administrative access depends on Windows task or service behavior and artifact-driven enumeration.
 - The room rewards stable shell management and careful Windows host review after the web compromise.
 
-## Defensive Takeaway
+## Security Notes
 
 - Web applications on Windows hosts collapse the gap between app compromise and system compromise when upload or code-execution features are exposed.
 - Password quality still matters even when the final exploit chain relies on a specific application bug.
@@ -838,7 +838,7 @@ CURATED_ROOM_NOTES = {
 - Post-exploitation relies on Windows enumeration and session management rather than a separate complex exploit.
 - The room emphasizes the operator workflow after compromise as much as the exploit itself.
 
-## Defensive Takeaway
+## Security Notes
 
 - Outdated desktop or media services can become remote access paths just as easily as server software.
 - Exploitability matters, but so does what an attacker can do with the first session they obtain.
@@ -859,7 +859,7 @@ CURATED_ROOM_NOTES = {
 - Once local access is established, the final step depends on standard Linux host enumeration and trust abuse.
 - The box is designed to reward systematic movement from service exposure to host-level privilege.
 
-## Defensive Takeaway
+## Security Notes
 
 - Internal file services are often treated as low-risk, but they frequently expose the exact documents and credentials an attacker needs to pivot.
 - Business data, not just config files, can become the key intelligence source during an intrusion.
@@ -869,11 +869,11 @@ CURATED_ROOM_NOTES = {
 
 CATEGORY_BRIEFS = {
     "seasonal-events": "Seasonal challenge series with day-wise tasks and broad topic coverage across offensive and defensive skills.",
-    "windows-ad": "Windows-focused room covering network service enumeration, exploitation, lateral movement concepts, or Active Directory workflow.",
-    "web-apps": "Web-facing lab centered on application testing, content discovery, misconfiguration abuse, and foothold development.",
-    "linux-privesc": "Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths.",
-    "recon-fundamentals": "Skill-building room for reconnaissance, tooling, cracking, packet analysis, or security fundamentals.",
-    "challenge-labs": "General mixed challenge room blending enumeration, exploitation, and post-exploitation practice.",
+    "windows-ad": "Windows-focused room covering service enumeration, exploitation, and Active Directory concepts.",
+    "web-apps": "Web-focused room covering application testing, content discovery, and common attack paths.",
+    "linux-privesc": "Linux room covering service enumeration, initial access, and privilege escalation.",
+    "recon-fundamentals": "Skill-building room covering reconnaissance, tooling, cracking, packet analysis, or security basics.",
+    "challenge-labs": "Mixed challenge room covering enumeration, exploitation, and post-exploitation practice.",
 }
 
 NOTE_FILE_PATTERNS = (
@@ -1156,9 +1156,9 @@ def synthesize_room_notes(name: str, category: str) -> str:
             "## Privilege Escalation\n\n"
             f"- After the first foothold, the room shifts into post-exploitation and local review.\n"
             f"- The key escalation themes are {privesc}, which complete the move to the final proof material.\n\n"
-            "## Defensive Takeaway\n\n"
-            f"- {title} reinforces how small exposure points compound when enumeration is disciplined and service relationships are understood.\n"
-            "- The defensive lesson is to reduce credential reuse, remove unnecessary trust paths, and harden secondary services before they become the pivot."
+        "## Security Notes\n\n"
+        f"- {title} reinforces how small exposure points compound when enumeration is disciplined and service relationships are understood.\n"
+        "- The defensive lesson is to reduce credential reuse, remove unnecessary trust paths, and harden secondary services before they become the pivot."
         )
 
     category_templates = {
@@ -1205,7 +1205,7 @@ def synthesize_room_notes(name: str, category: str) -> str:
         "## Privilege Escalation\n\n"
         f"- {privesc}\n"
         f"- After the foothold, local context matters more than noisy exploitation.\n\n"
-        "## Defensive Takeaway\n\n"
+        "## Security Notes\n\n"
         f"- {takeaway}"
     )
 
@@ -1219,11 +1219,11 @@ def build_body(folder: Path, kind: str) -> str:
     body.append(f'  <p class="eyebrow">root@rumais:~# inspect {slugify(name)}</p>')
     body.append(f"  <h1>{title}</h1>")
     if kind == "series":
-        body.append(f"  <p>Series archive for {title}. Use this as a structured entry point into the seasonal challenge notes and day-wise writeups.</p>")
+        body.append(f"  <p>Collection page for {title} with links to the available day-by-day notes.</p>")
     else:
         room_category = categorize_room(name, kind)
         brief = CATEGORY_BRIEFS[room_category]
-        body.append(f"  <p>{brief} This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>")
+        body.append(f"  <p>{brief} This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>")
     body.append("</section>\n")
 
     if kind == "series":
@@ -1247,7 +1247,7 @@ def build_body(folder: Path, kind: str) -> str:
     room_category_title = CATEGORY_META[room_category]["title"]
 
     body.append('<section class="panel">')
-    body.append('  <h2>Room Profile</h2>')
+    body.append('  <h2>Room Details</h2>')
     status = "Primary writeup exists in local notes" if markdowns else "Built from supporting notes and artifacts" if docs or notes else "Waiting for deeper manual reconstruction"
     body.append(f"  <p>{status}. This room is grouped under <strong>{room_category_title}</strong>.</p>")
     meta: list[str] = []
@@ -1268,7 +1268,7 @@ def build_body(folder: Path, kind: str) -> str:
     if name in RESEARCH_SUMMARIES:
         summary = RESEARCH_SUMMARIES[name]
         body.append('<section class="panel">')
-        body.append('  <h2>Attack Path Overview</h2>')
+        body.append('  <h2>Summary</h2>')
         body.append(f"  <p>{summary['summary']}</p>")
         body.append('  <div class="tag-list">')
         for item in summary["focus"]:
@@ -1277,19 +1277,19 @@ def build_body(folder: Path, kind: str) -> str:
         body.append('</section>\n')
     else:
         body.append('<section class="panel">')
-        body.append('  <h2>Workflow Focus</h2>')
+        body.append('  <h2>Summary</h2>')
         body.append(f"  <p>{CATEGORY_BRIEFS[room_category]} Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>")
         body.append('</section>\n')
 
     if name in CURATED_ROOM_NOTES:
-        body.append("## Operator Notes\n")
+        body.append("## Notes\n")
         body.append(CURATED_ROOM_NOTES[name].strip())
     elif kind == "room":
-        body.append("## Operator Notes\n")
+        body.append("## Notes\n")
         body.append(synthesize_room_notes(name, room_category))
     elif markdowns:
         main_text = normalize_markdown(read_note_file(markdowns[0]))
-        body.append("## Operator Notes\n")
+        body.append("## Notes\n")
         body.append(main_text)
 
     safe_docs = [p for p in docs if not is_sensitive_name(p.name) and p.name.lower() != "readme.docx"]
@@ -1299,11 +1299,11 @@ def build_body(folder: Path, kind: str) -> str:
         if readme_docx:
             readme_text = normalize_markdown(sanitize_text(read_note_file(readme_docx))).strip()
         if readme_text:
-            body.append("## Operator Notes\n")
+            body.append("## Notes\n")
             body.append(readme_text)
 
     if safe_docs:
-        body.append("\n## Supporting Notes\n")
+        body.append("\n## Supporting Files\n")
         for doc in safe_docs[:6]:
             text = normalize_markdown(sanitize_text(read_note_file(doc))).strip()
             if not text:
@@ -1313,7 +1313,7 @@ def build_body(folder: Path, kind: str) -> str:
             body.append("")
 
     if notes:
-        body.append("## Evidence Pack\n")
+        body.append("## Collected Output\n")
         for note in notes[:8]:
             content = sanitize_text(read_note_file(note)).strip()
             if not content:

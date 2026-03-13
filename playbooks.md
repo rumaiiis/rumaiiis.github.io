@@ -69,6 +69,6 @@ permalink: /writeups/playbooks/
 </section>
 
 <section class="panel">
-  <h2>Why These Matter</h2>
-  <p>These notes sit between offensive training and defensive operations. They show how I document repeatable workflows, reduce noisy experimentation, and convert lab activity into something operationally useful.</p>
+  <h2>Why These Notes Matter</h2>
+  <p>These notes show how I document repeatable workflows, reduce trial-and-error testing, and turn lab work into something practical and reusable.</p>
 </section>

@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/team"
 permalink: "/writeups/tryhackme/team/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Team"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect team</p>
   <h1>Team</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Team"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Team generally follows a web-to-SSH Linux path: use web enumeration to recover hints or local file access, obtain credentials or a user foothold, transition into SSH, and escalate via writable scripts or trusted execution paths.</p>
   <div class="tag-list">
     <span class="tag">web enumeration</span>
@@ -35,7 +35,7 @@ room_name: "Team"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,12 +52,12 @@ room_name: "Team"
 - Post-exploitation focuses on writable scripts or trusted execution paths that run under a higher-privilege user.
 - The box rewards careful inspection of local automation and delegated execution rather than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - Small hostname clues can hide the real attack surface from casual testing, but not from structured enumeration.
 - File-read issues frequently become credential compromise once application data and local scripts are exposed.
 - Trusted scripts and scheduled execution paths need the same hardening attention as public-facing services.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-host
 

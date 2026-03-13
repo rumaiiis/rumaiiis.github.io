@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/erit-securus-1"
 permalink: "/writeups/tryhackme/erit-securus-1/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Erit Securus 1"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect erit-securus-1</p>
   <h1>Erit Securus 1</h1>
-  <p>General mixed challenge room blending enumeration, exploitation, and post-exploitation practice. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Mixed challenge room covering enumeration, exploitation, and post-exploitation practice. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Challenge Labs</strong>.</p>
   <div class="tag-list">
     <span class="tag">Challenge Labs</span>
@@ -25,11 +25,11 @@ room_name: "Erit Securus 1"
 </section>
 
 <section class="panel">
-  <h2>Workflow Focus</h2>
-  <p>General mixed challenge room blending enumeration, exploitation, and post-exploitation practice. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
+  <h2>Summary</h2>
+  <p>Mixed challenge room covering enumeration, exploitation, and post-exploitation practice. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -46,11 +46,11 @@ room_name: "Erit Securus 1"
 - After the foothold, the room transitions into standard host enumeration and local privilege-escalation review.
 - After the foothold, local context matters more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - The defensive lesson is that seemingly minor leaks across different services often combine into full compromise when an attacker is systematic.
 
-## Supporting Notes
+## Supporting Files
 
 ### Requirements
 
@@ -103,7 +103,7 @@ ddec07b44150c5bef972069d4faa85a8
 e5fe3e841937d83e177b2d9597bbc472
 f104824edcb8459db78dc0279751dee0
 
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

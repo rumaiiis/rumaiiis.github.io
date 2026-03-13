@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/vulnnet-internal"
 permalink: "/writeups/tryhackme/vulnnet-internal/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "VulnNet Internal"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect vulnnet-internal</p>
   <h1>VulnNet Internal</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -25,7 +25,7 @@ room_name: "VulnNet Internal"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Public walkthroughs and the official room description both point to this box being centered on internal-service enumeration. The common methodology is to enumerate SMB/NFS-style internal services, recover business files or service data, use those artifacts to discover additional internal access paths, and pivot from exposed internal resources to a local user shell before final privilege escalation.</p>
   <div class="tag-list">
     <span class="tag">internal service enumeration</span>
@@ -36,7 +36,7 @@ room_name: "VulnNet Internal"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -53,13 +53,13 @@ room_name: "VulnNet Internal"
 - Once local access is established, the final step depends on standard Linux host enumeration and trust abuse.
 - The box is designed to reward systematic movement from service exposure to host-level privilege.
 
-## Defensive Takeaway
+## Security Notes
 
 - Internal file services are often treated as low-risk, but they frequently expose the exact documents and credentials an attacker needs to pivot.
 - Business data, not just config files, can become the key intelligence source during an intrusion.
 - Segmentation and least-privilege access to internal shares are as important as patching edge services.
 
-## Supporting Notes
+## Supporting Files
 
 ### Business Req
 
@@ -74,7 +74,7 @@ Purge regularly data that is not needed anymore
 
 [redacted challenge flag]
 
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

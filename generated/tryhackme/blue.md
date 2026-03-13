@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/blue"
 permalink: "/writeups/tryhackme/blue/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Blue"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect blue</p>
   <h1>Blue</h1>
-  <p>Windows-focused room covering network service enumeration, exploitation, lateral movement concepts, or Active Directory workflow. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Windows-focused room covering service enumeration, exploitation, and Active Directory concepts. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Windows and AD</strong>.</p>
   <div class="tag-list">
     <span class="tag">Windows and AD</span>
@@ -24,7 +24,7 @@ room_name: "Blue"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Blue is generally solved by identifying legacy SMB exposure on Windows, validating the EternalBlue attack surface, gaining a shell through the SMB vulnerability path, and then performing standard post-exploitation to recover proof files and system-level access.</p>
   <div class="tag-list">
     <span class="tag">SMB enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Blue"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Blue"
 - The exploit itself effectively provides a high-privilege context, so the remaining work is to stabilize access and recover the proof material.
 - The box is designed to teach the exploitation chain and the basic post-exploitation workflow that follows.
 
-## Defensive Takeaway
+## Security Notes
 
 - Legacy SMB exposure remains one of the clearest examples of how a single unpatched service can become full host compromise.
 - Network segmentation and aggressive patching are still the most important defenses against exploit chains like EternalBlue.
 - Even training boxes like this highlight why old Windows attack surface should be retired or isolated quickly.
-## Evidence Pack
+## Collected Output
 
 ### initail-nmap
 

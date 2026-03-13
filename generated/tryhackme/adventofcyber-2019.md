@@ -1,16 +1,16 @@
 ---
-layout: writeup
-title: "/[redacted]-2019"
-permalink: "/writeups/tryhackme/[redacted]-2019/"
+layout: page
+title: "/adventofcyber-2019"
+permalink: "/writeups/tryhackme/adventofcyber-2019/"
 platform: "TryHackMe"
 writeup_type: "series"
 series_name: "Advent of Cyber 2019"
 ---
 
 <section class="page-hero panel">
-  <p class="eyebrow">root@rumais:~# inspect [redacted]-2019</p>
+  <p class="eyebrow">root@rumais:~# inspect adventofcyber-2019</p>
   <h1>Advent of Cyber 2019</h1>
-  <p>Series archive for Advent of Cyber 2019. Use this as a structured entry point into the seasonal challenge notes and day-wise writeups.</p>
+  <p>Collection page for Advent of Cyber 2019 with links to the available day-by-day notes.</p>
 </section>
 
 {% assign series_posts = site.posts | where: "series", page.series_name %}

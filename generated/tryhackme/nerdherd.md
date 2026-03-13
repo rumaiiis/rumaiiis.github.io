@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/nerdherd"
 permalink: "/writeups/tryhackme/nerdherd/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Nerd Herd"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect nerdherd</p>
   <h1>Nerd Herd</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -25,7 +25,7 @@ room_name: "Nerd Herd"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Nerd Herd is generally approached through layered clue-chaining: combine web hints, FTP artifacts, and SMB enumeration to recover credentials, obtain a Linux foothold, and then escalate through local weaknesses uncovered during post-exploitation.</p>
   <div class="tag-list">
     <span class="tag">multi-service enumeration</span>
@@ -35,7 +35,7 @@ room_name: "Nerd Herd"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,13 +52,13 @@ room_name: "Nerd Herd"
 - After login, local enumeration becomes the deciding factor.
 - The final escalation depends on host weakness rather than application logic, and the room rewards thorough post-exploitation review.
 
-## Defensive Takeaway
+## Security Notes
 
 - Small clue leaks across multiple services often combine into a full credential path even if each single leak looks harmless.
 - Shared secrets between SMB, FTP, and SSH reduce an attacker’s workload dramatically.
 - Attackers only need one successful interpretation of a clue chain to turn soft exposure into root access.
 
-## Supporting Notes
+## Supporting Files
 
 ### Hellon3Rd
 
@@ -72,7 +72,7 @@ Sincerely,
 0xpr0N3rd
 <3
 
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

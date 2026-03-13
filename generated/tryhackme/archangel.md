@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/archangel"
 permalink: "/writeups/tryhackme/archangel/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Archangel"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect archangel</p>
   <h1>Archangel</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Archangel"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Archangel generally follows an LFI-to-shell path: enumerate the hosted content, identify the local file inclusion issue, abuse log or file-based execution to gain code execution, then escalate through misconfigurations left on the Linux host.</p>
   <div class="tag-list">
     <span class="tag">directory enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Archangel"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Archangel"
 - Once code execution is established, the room moves into Linux post-exploitation.
 - The escalation route depends on local misconfiguration and execution context rather than a public kernel exploit.
 
-## Defensive Takeaway
+## Security Notes
 
 - Development pages and test endpoints are often the weakest link in otherwise small web stacks.
 - LFI should never be treated as “just file read” because it often becomes shell access when paired with writable logs or scriptable inputs.
 - Tight application separation and controlled execution paths reduce the blast radius after web compromise.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-dirbuster-list
 

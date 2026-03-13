@@ -471,7 +471,7 @@
     "category_title": "Recon and Fundamentals",
     "category_description": "Core network, recon, cracking, and defensive tooling exercises.",
     "markdown_count": 0,
-    "docx_count": 15,
+    "docx_count": 14,
     "note_count": 0,
     "url": "/writeups/tryhackme/johnripper/"
   },
@@ -970,12 +970,12 @@
     "display_name": "Wireshark",
     "slug": "wireshark",
     "kind": "room",
-    "coverage": "partial",
+    "coverage": "stub",
     "category": "recon-fundamentals",
     "category_title": "Recon and Fundamentals",
     "category_description": "Core network, recon, cracking, and defensive tooling exercises.",
     "markdown_count": 0,
-    "docx_count": 1,
+    "docx_count": 0,
     "note_count": 0,
     "url": "/writeups/tryhackme/wireshark/"
   },

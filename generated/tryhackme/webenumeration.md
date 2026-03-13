@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/webenumeration"
 permalink: "/writeups/tryhackme/webenumeration/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Web Enumeration"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect webenumeration</p>
   <h1>Web Enumeration</h1>
-  <p>Web-facing lab centered on application testing, content discovery, misconfiguration abuse, and foothold development. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Web-focused room covering application testing, content discovery, and common attack paths. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Web and App Security</strong>.</p>
   <div class="tag-list">
     <span class="tag">Web and App Security</span>
@@ -24,11 +24,11 @@ room_name: "Web Enumeration"
 </section>
 
 <section class="panel">
-  <h2>Workflow Focus</h2>
-  <p>Web-facing lab centered on application testing, content discovery, misconfiguration abuse, and foothold development. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
+  <h2>Summary</h2>
+  <p>Web-focused room covering application testing, content discovery, and common attack paths. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -45,10 +45,10 @@ room_name: "Web Enumeration"
 - Once the app is compromised, the next step is to stabilize host access and enumerate for the final path to proof material.
 - After the foothold, local context matters more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - The defensive lesson is that web compromise rarely stays in the web tier when secrets, upload paths, or admin functions are exposed.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-changes-dir
 
@@ -142,17 +142,17 @@ _______________________________________________________________
        @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
 _______________________________________________________________
 
-[32m[+][0m URL: http://wpscan.thm/ [10.10.44.105]
-[32m[+][0m Started: Sun Jun 27 13:15:44 2021
+[32m[+][0m URL: http://wpscan.thm/ [10.10.44.105]
+[32m[+][0m Started: Sun Jun 27 13:15:44 2021
 
 Interesting Finding(s):
 
-[32m[+][0m Headers
+[32m[+][0m Headers
  | Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
  | Found By: Headers (Passive Detection)
  | Confidence: 100%
 
-[32m[+][0m XML-RPC seems to be enabled: http://wpscan.thm/xmlrpc.php
+[32m[+][0m XML-RPC seems to be enabled: http://wpscan.thm/xmlrpc.php
  | Found By: Direct Access (Aggressive Detection)
  | Confidence: 100%
  | References:
@@ -162,18 +162,18 @@ Interesting Finding(s):
  |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
  |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
 
-[32m[+][0m WordPress readme found: http://wpscan.thm/readme.html
+[32m[+][0m WordPress readme found: http://wpscan.thm/readme.html
  | Found By: Direct Access (Aggressive Detection)
  | Confidence: 100%
 
-[32m[+][0m The external WP-Cron seems to be enabled: http://wpscan.thm/wp-cron.php
+[32m[+][0m The external WP-Cron seems to be enabled: http://wpscan.thm/wp-cron.php
  | Found By: Direct Access (Aggressive Detection)
  | Confidence: 60%
  | References:
  |  - https://www.iplocation.net/defend-wordpress-from-ddos
  |  - https://github.com/wpscanteam/wpscan/issues/1299
 
-[32m[+][0m WordPress version 5.0 identified (Insecure, released on 2018-12-06).
+[32m[+][0m WordPress version 5.0 identified (Insecure, released on 2018-12-06).
  | Found By: Rss Generator (Passive Detection)
 ```
 
@@ -194,17 +194,17 @@ _______________________________________________________________
        @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
 _______________________________________________________________
 
-[32m[+][0m URL: http://wpscan.thm/ [10.10.44.105]
-[32m[+][0m Started: Sun Jun 27 13:12:54 2021
+[32m[+][0m URL: http://wpscan.thm/ [10.10.44.105]
+[32m[+][0m Started: Sun Jun 27 13:12:54 2021
 
 Interesting Finding(s):
 
-[32m[+][0m Headers
+[32m[+][0m Headers
  | Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
  | Found By: Headers (Passive Detection)
  | Confidence: 100%
 
-[32m[+][0m XML-RPC seems to be enabled: http://wpscan.thm/xmlrpc.php
+[32m[+][0m XML-RPC seems to be enabled: http://wpscan.thm/xmlrpc.php
  | Found By: Direct Access (Aggressive Detection)
  | Confidence: 100%
  | References:
@@ -214,17 +214,17 @@ Interesting Finding(s):
  |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
  |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
 
-[32m[+][0m WordPress readme found: http://wpscan.thm/readme.html
+[32m[+][0m WordPress readme found: http://wpscan.thm/readme.html
  | Found By: Direct Access (Aggressive Detection)
  | Confidence: 100%
 
-[32m[+][0m The external WP-Cron seems to be enabled: http://wpscan.thm/wp-cron.php
+[32m[+][0m The external WP-Cron seems to be enabled: http://wpscan.thm/wp-cron.php
  | Found By: Direct Access (Aggressive Detection)
  | Confidence: 60%
  | References:
  |  - https://www.iplocation.net/defend-wordpress-from-ddos
  |  - https://github.com/wpscanteam/wpscan/issues/1299
 
-[32m[+][0m WordPress version 5.0 identified (Insecure, released on 2018-12-06).
+[32m[+][0m WordPress version 5.0 identified (Insecure, released on 2018-12-06).
  | Found By: Rss Generator (Passive Detection)
 ```

@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/agentsudo"
 permalink: "/writeups/tryhackme/agentsudo/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Agent Sudo"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect agentsudo</p>
   <h1>Agent Sudo</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Agent Sudo"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Typical public walkthrough flow for this room is: enumerate HTTP/FTP/SSH, manipulate the User-Agent header to reveal the hidden clue, brute-force or recover FTP access for Chris, extract hidden material from the image files with binwalk and steghide, recover James's SSH access, then abuse sudo misconfiguration tied to CVE-2019-14287 for privilege escalation.</p>
   <div class="tag-list">
     <span class="tag">HTTP header manipulation</span>
@@ -35,7 +35,7 @@ room_name: "Agent Sudo"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -53,30 +53,30 @@ room_name: "Agent Sudo"
 - Once the Linux user shell is established, local enumeration shows a permissive `sudo` configuration.
 - The escalation path maps to `CVE-2019-14287`, where a sudo rule can be abused to execute commands as root despite an apparent restriction.
 
-## Defensive Takeaway
+## Security Notes
 
 - Treat client-controlled headers as untrusted, but remember they can still expose workflow clues or logic differences during testing.
 - Hidden data in images and archives is a common challenge pattern and a good reminder to inspect artifacts, not just obvious files.
 - Sudo policy edge cases remain high-value privilege-escalation findings on Linux systems.
 
-## Supporting Notes
+## Supporting Files
 
 ### To Agentj
 
 Dear agent J,
-All these alien like photos are fake! Agent R stored the real picture inside your directory. Your login password is [redacted] stored in the fake picture. It shouldn't be a problem for you.
+All these alien like photos are fake! Agent R stored the real picture inside your directory. Your login password is somehow stored in the fake picture. It shouldn't be a problem for you.
 From,
 Agent C
 
 ### Message
 
 Hi james,
-Glad you find this message. Your login password is [redacted]!
+Glad you find this message. Your login password is hackerrules!
 Don't ask me why the password look cheesy, ask agent R who set this password for you.
 Your buddy,
 chris
 
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

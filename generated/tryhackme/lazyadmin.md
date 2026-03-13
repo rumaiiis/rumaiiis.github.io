@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/lazyadmin"
 permalink: "/writeups/tryhackme/lazyadmin/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Lazy Admin"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect lazyadmin</p>
   <h1>Lazy Admin</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Lazy Admin"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Lazy Admin usually starts with CMS enumeration and weak credential handling, then transitions into Linux shell access and a straightforward local privilege-escalation path using exposed scripts, writable files, or sudo misconfiguration.</p>
   <div class="tag-list">
     <span class="tag">CMS enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Lazy Admin"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Lazy Admin"
 - Once on the host, the privilege-escalation route depends on local scripts, weak trust boundaries, or sudo-assisted execution.
 - The room is designed to show how quickly a “small” CMS issue becomes full compromise when secrets are exposed.
 
-## Defensive Takeaway
+## Security Notes
 
 - Backup files inside the web root are effectively credential disclosure.
 - CMS admin panels should never have the ability to drop executable content without strict controls.
 - Web compromise plus weak local execution rules is enough for total host loss on small Linux deployments.
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

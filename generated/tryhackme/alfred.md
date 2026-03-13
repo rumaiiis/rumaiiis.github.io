@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/alfred"
 permalink: "/writeups/tryhackme/alfred/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Alfred"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect alfred</p>
   <h1>Alfred</h1>
-  <p>Windows-focused room covering network service enumeration, exploitation, lateral movement concepts, or Active Directory workflow. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Windows-focused room covering service enumeration, exploitation, and Active Directory concepts. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Windows and AD</strong>.</p>
   <div class="tag-list">
     <span class="tag">Windows and AD</span>
@@ -24,7 +24,7 @@ room_name: "Alfred"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Alfred is typically solved by identifying the exposed Jenkins service, abusing script-console or build functionality for code execution, establishing a Windows shell, and then using token or privilege abuse techniques to escalate to SYSTEM.</p>
   <div class="tag-list">
     <span class="tag">Jenkins enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Alfred"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Alfred"
 - The escalation step relies on Windows token context and privilege abuse rather than a network exploit.
 - Once the session is stabilized, the attacker can impersonate or leverage a higher-privileged token to reach `SYSTEM`.
 
-## Defensive Takeaway
+## Security Notes
 
 - CI/CD platforms are high-impact assets because build execution is effectively remote code execution by design.
 - Alternate admin ports should be treated as core production exposure, not “secondary” services.
 - Windows privilege token abuse is a reminder that post-exploitation hardening matters after the initial compromise.
-## Evidence Pack
+## Collected Output
 
 ### nmap-fast
 

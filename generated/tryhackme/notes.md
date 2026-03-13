@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/notes"
 permalink: "/writeups/tryhackme/notes/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Notes"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect notes</p>
   <h1>Notes</h1>
-  <p>General mixed challenge room blending enumeration, exploitation, and post-exploitation practice. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Mixed challenge room covering enumeration, exploitation, and post-exploitation practice. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Challenge Labs</strong>.</p>
   <div class="tag-list">
     <span class="tag">Challenge Labs</span>
@@ -23,11 +23,11 @@ room_name: "Notes"
 </section>
 
 <section class="panel">
-  <h2>Workflow Focus</h2>
-  <p>General mixed challenge room blending enumeration, exploitation, and post-exploitation practice. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
+  <h2>Summary</h2>
+  <p>Mixed challenge room covering enumeration, exploitation, and post-exploitation practice. Use the recovered artifacts below as the evidence base for enumeration, access development, and post-exploitation review.</p>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -44,11 +44,11 @@ room_name: "Notes"
 - After the foothold, the room transitions into standard host enumeration and local privilege-escalation review.
 - After the foothold, local context matters more than noisy exploitation.
 
-## Defensive Takeaway
+## Security Notes
 
 - The defensive lesson is that seemingly minor leaks across different services often combine into full compromise when an attacker is systematic.
 
-## Supporting Notes
+## Supporting Files
 
 ### Owasp 10
 
@@ -143,12 +143,12 @@ nmap scritps stored in /usr/share/nmap/scripts
 ### Stable Shell
 
 python
----[redacted]{work on linux because linux come with buildin pthton}
+---------{work on linux because linux come with buildin pthton}
 if any version of python installed we can use :
 python -c 'import pty;pty.spawn("/bin/bash")'
 export TERM=xterm -- this will give us access to term commands such as clear.
 rlwrap
----[redacted]{perticularly applicable in windows}
+--------{perticularly applicable in windows}
 To use rlwrap, we invoke a slightly different listener:
 before apt install rlwrap
 rlwrap nc -lvnp <port>

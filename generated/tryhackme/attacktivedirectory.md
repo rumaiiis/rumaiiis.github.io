@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/attacktivedirectory"
 permalink: "/writeups/tryhackme/attacktivedirectory/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Attacktive Directory"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect attacktivedirectory</p>
   <h1>Attacktive Directory</h1>
-  <p>Windows-focused room covering network service enumeration, exploitation, lateral movement concepts, or Active Directory workflow. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Windows-focused room covering service enumeration, exploitation, and Active Directory concepts. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Windows and AD</strong>.</p>
   <div class="tag-list">
     <span class="tag">Windows and AD</span>
@@ -24,7 +24,7 @@ room_name: "Attacktive Directory"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Attacktive Directory is usually solved as an AD enumeration and credential-abuse lab: identify the domain, enumerate valid users, discover AS-REP roastable accounts or sprayable credentials, pivot into SMB or remote-management access, and recover the domain proof material through standard Windows post-exploitation.</p>
   <div class="tag-list">
     <span class="tag">domain enumeration</span>
@@ -35,7 +35,7 @@ room_name: "Attacktive Directory"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,12 +52,12 @@ room_name: "Attacktive Directory"
 - The privilege-escalation phase is more about expanding domain access and reading the right protected material than forcing a single exploit.
 - Standard AD post-exploitation workflow and careful enumeration lead to the final flags.
 
-## Defensive Takeaway
+## Security Notes
 
 - User enumeration and Kerberos abuse remain highly effective against weakly hardened domains.
 - Good password policy, pre-auth enforcement, and account monitoring materially reduce the success rate of these workflows.
 - Small AD hygiene failures compound quickly because every recovered identity expands the attacker’s graph.
-## Evidence Pack
+## Collected Output
 
 ### nmap-initial
 

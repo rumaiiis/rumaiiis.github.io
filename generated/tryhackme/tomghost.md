@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/tomghost"
 permalink: "/writeups/tryhackme/tomghost/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Tomghost"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect tomghost</p>
   <h1>Tomghost</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -23,7 +23,7 @@ room_name: "Tomghost"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Tomghost commonly begins with Tomcat and AJP enumeration. The usual path is to exploit the Ghostcat file-read issue, recover credential material from configuration files, pivot into SSH, and then escalate locally using accessible backup or key artifacts.</p>
   <div class="tag-list">
     <span class="tag">Tomcat enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Tomghost"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Tomghost"
 - Once on the host, the room shifts into artifact-driven Linux escalation.
 - Backup or private-key material left on disk provides the next pivot, and local trust relationships complete the final move to root.
 
-## Defensive Takeaway
+## Security Notes
 
 - AJP should not be exposed broadly, especially on older Tomcat deployments.
 - Configuration and backup files often hold enough secrets to turn a file-read bug into full host access.
 - Host cleanup matters: stale keys and archived materials remain dangerous long after the original service issue is patched.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

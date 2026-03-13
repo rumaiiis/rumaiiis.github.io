@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/startup"
 permalink: "/writeups/tryhackme/startup/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Startup"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect startup</p>
   <h1>Startup</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Primary writeup exists in local notes. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -25,7 +25,7 @@ room_name: "Startup"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Startup is typically solved by enumerating FTP and web services, identifying an upload or writable-content path, obtaining a reverse shell, and then escalating through local credentials, scripts, or scheduled tasks left on the system.</p>
   <div class="tag-list">
     <span class="tag">FTP enumeration</span>
@@ -35,7 +35,7 @@ room_name: "Startup"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -52,13 +52,13 @@ room_name: "Startup"
 - During local enumeration, the packet capture becomes the source of the user credential, which moves the shell into a stronger user context.
 - The final step depends on identifying a root-owned automation path and replacing or influencing the script it executes.
 
-## Defensive Takeaway
+## Security Notes
 
 - Anonymous writable FTP plus web-served content is effectively remote code execution waiting to happen.
 - Internal network captures often leak much more than intended, including passwords and workflow clues.
 - Root cron jobs should never execute user-controlled scripts or files.
 
-## Supporting Notes
+## Supporting Files
 
 ### .Test.Log
 
@@ -68,7 +68,7 @@ test
 
 Whoever is leaving these damn Among Us memes in this share, it IS NOT FUNNY. People downloading documents from our website will think we are a joke! Now I dont know who it is, but Maya is looking pretty sus.
 
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 

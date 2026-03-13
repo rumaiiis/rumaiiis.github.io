@@ -1,5 +1,5 @@
 ---
-layout: writeup
+layout: page
 title: "/yearoftherabbit"
 permalink: "/writeups/tryhackme/yearoftherabbit/"
 platform: "TryHackMe"
@@ -10,11 +10,11 @@ room_name: "Year of the Rabbit"
 <section class="page-hero panel">
   <p class="eyebrow">root@rumais:~# inspect yearoftherabbit</p>
   <h1>Year of the Rabbit</h1>
-  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+  <p>Linux room covering service enumeration, initial access, and privilege escalation. This page combines the local notes, supporting artifacts, and a cleaned-up summary of the room path.</p>
 </section>
 
 <section class="panel">
-  <h2>Room Profile</h2>
+  <h2>Room Details</h2>
   <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
   <div class="tag-list">
     <span class="tag">Linux and PrivEsc</span>
@@ -24,7 +24,7 @@ room_name: "Year of the Rabbit"
 </section>
 
 <section class="panel">
-  <h2>Attack Path Overview</h2>
+  <h2>Summary</h2>
   <p>Year of the Rabbit typically blends web enumeration, hidden content discovery, weak credential handling, and Linux post-exploitation. The common flow is to pivot from the application layer to a shell and then enumerate carefully for the final escalation route.</p>
   <div class="tag-list">
     <span class="tag">web enumeration</span>
@@ -34,7 +34,7 @@ room_name: "Year of the Rabbit"
   </div>
 </section>
 
-## Operator Notes
+## Notes
 
 ## Recon
 
@@ -51,12 +51,12 @@ room_name: "Year of the Rabbit"
 - After the SSH foothold, local enumeration and the hidden `s3cr3t` clue expose the path to the next user and finally to root.
 - The final escalation hinges on a vulnerable `sudo` path combined with an allowed editor or delegated command.
 
-## Defensive Takeaway
+## Security Notes
 
 - Static assets, redirects, and media files can leak as much as dynamic endpoints when attackers inspect them properly.
 - Obscure encodings and esoteric formats are not protection; they only delay basic analysis.
 - Old `sudo` edge cases and delegated editor access remain dangerous escalation primitives.
-## Evidence Pack
+## Collected Output
 
 ### gobuster-initial
 
