@@ -50,6 +50,5 @@ permalink: /contact/
 
       <input type="submit" value="[ send ]">
     </form>
-    <p class="form-note">Messages are routed to rumaisbinmajeed@gmail.com. If this is the first live submission, confirm the verification email from FormSubmit to activate delivery.</p>
   </article>
 </section>
