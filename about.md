@@ -4,36 +4,50 @@ title: /about
 permalink: /about/
 ---
 
-# RUMAIS: A Symphony in Cybersecurity
+<section class="page-hero panel">
+  <p class="eyebrow">root@rumais:~# cat /etc/profile</p>
+  <h1>Profile</h1>
+  <p>Cyber Threat Detection Engineer working across SOC monitoring, SIEM deployment, adversary simulation, malware analysis, and purple-team validation. The workflow is direct: emulate, observe, detect, refine.</p>
+</section>
 
-## Overture: The Digital Prodigy
-In the realm of network configurations and data streams, a digital prodigy named Rumais emerged at Soften Technologies. Here, as a Junior Network Engineer, he wasn't just maintaining systems; he was orchestrating a symphony of networks. His early career was marked by keen insights into network configurations, laying a robust foundation for his cybersecurity odyssey.
+<section class="content-grid">
+  <article class="panel">
+    <h2>Tradecraft</h2>
+    <ul>
+      <li>Build detection logic around real attacker behavior and telemetry.</li>
+      <li>Support SOC monitoring and managed CSOC operations.</li>
+      <li>Deploy and integrate SIEM and security tooling.</li>
+      <li>Run purple-team operations and attack simulation exercises.</li>
+      <li>Execute ransomware simulations and ATT&amp;CK-based validation.</li>
+      <li>Analyze malware, extract IOCs, and write detection rules.</li>
+    </ul>
+  </article>
 
-## Act I: The Ascent
-Transitioning to Thomsun Infocare LLP, Rumais embraced the role of a Cybersecurity Engineer. His foray into Vulnerability Assessment and Penetration Testing (VAPT) of ERP applications wasn't just a job—it was a craft. Here, he honed his skills in ethical hacking, diving deep into the vulnerabilities and securing digital fortresses. His adeptness in OSINT research and his insightful blog on the Log4j vulnerability marked him as a rising star in cybersecurity.
+  <article class="panel">
+    <h2>Operating Mode</h2>
+    <p>I prefer practical security engineering over theory-heavy noise. Validate controls, expose blind spots, write detections, improve visibility, and make defensive teams faster under real attack conditions.</p>
+    <div class="tag-list">
+      <span class="tag">Detection Engineering</span>
+      <span class="tag">Purple Team Ops</span>
+      <span class="tag">Threat Simulation</span>
+      <span class="tag">Malware Analysis</span>
+      <span class="tag">Phishing Analysis</span>
+      <span class="tag">IOC Extraction</span>
+    </div>
+  </article>
+</section>
 
-## Act II: The Cyber Sentinel
-At DTS Solution, Rumais's narrative evolves dramatically. As a Cyber Threat Detection Engineer, he's at the vanguard of cyber defense. His daily exploits include:
-- Masterful threat hunting and attack simulations.
-- Devising strategies for malware sandboxing and phishing analysis.
-- Spearheading SOC monitoring and compromise assessments.
-- Crafting automated scripts and integrating security tools.
-- Conducting ransomware simulations and vulnerability assessments.
-- Establishing robust SIEM infrastructure.
+<section class="content-grid">
+  <article class="panel">
+    <h2>Arsenal</h2>
+    <p><strong>Languages:</strong> Python, Bash, C/C++</p>
+    <p><strong>Operating Systems:</strong> Kali, Parrot, Ubuntu, Windows, CentOS, Fedora</p>
+    <p><strong>Security Platforms:</strong> CrowdStrike, SentinelOne, Wazuh, MISP, Azure Defender, Atomic Red Team, Vectr, GuardYoo, OpenCVE, Uptime Kuma</p>
+    <p><strong>Tools:</strong> Nmap, Nessus, Burp Suite, Metasploit, SQLMap, Nikto, Gobuster, Wireshark, Ghidra, YARA, Sigma</p>
+  </article>
 
-His role is more than a job; it's a commitment to safeguarding the digital realm.
-
-## The Arsenal of Mastery
-Rumais's expertise is a tapestry woven with diverse certifications and technical prowess:
-- **Certifications**: CPENT (v1), CEH (v.11), Microsoft Security Fundamentals (SC-900), Azure Fundamentals (AZ-900), Fortinet Network Security Expert Level 1 and more...
-- **Technical Acumen**:
-  - **Languages**: Mastery in Python, Bash, C/C++ and more...
-  - **Operating Systems**: Proficient in Kali, Parrot, Ubuntu, Windows, CentOS, Fedora and more...
-  - **Tools and Techniques**: NMAP, Acunetix, Nessus, Metasploit, Burp Suite, SQL Map, Nikto, Gobuster, John the Ripper, Hydra, Maltego, Google Hacking, WireShark, Dirsearch, Dirb, and an array of advanced cybersecurity tools including Atomic Redteam, Vectr, Wazuh, Crowdstrike, SentinelOne, Azure Cloud, Azure Defender and more.....
-
-## The Continuous Odyssey
-Rumais's quest for knowledge is unquenchable:
-- **Workshops & Conferences**: A regular at the RED TEAM SECURITY SUMMIT and other significant events, he immerses himself in learning and sharing.
-- **Continual Learning**: His journey through TryHackMe and HackTheBox, along with courses like Practical Ethical Hacking (TCM), PTS (INE), CEH (Reteam Hacker Academy), and Cyber Security Course Volume 1 (StationX), reflects his unending pursuit of cybersecurity excellence.
-
-[Join Me in My Cyber Adventures](/blog)
+  <article class="panel terminal-panel">
+    <h2>Mission Statement</h2>
+    <p>Translate attacker behavior into measurable defensive improvement. Every simulation, detection rule, and investigation should sharpen visibility and reduce response time.</p>
+  </article>
+</section>

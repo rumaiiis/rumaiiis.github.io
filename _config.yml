@@ -8,9 +8,11 @@ url: "https://rumaiiis.github.io"
 
 header_pages:
   - index.md
-  - blog.md
-  - poc.md
   - about.md
+  - experience.md
+  - writeups.md
+  - projects.md
+  - certifications.md
   - contact.md
 
 #footer: ''

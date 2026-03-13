@@ -1,0 +1,647 @@
+---
+layout: writeup
+title: "/thecodcaper"
+permalink: "/writeups/tryhackme/thecodcaper/"
+platform: "TryHackMe"
+writeup_type: "room"
+room_name: "The Cod Caper"
+---
+
+<section class="page-hero panel">
+  <p class="eyebrow">root@rumais:~# inspect thecodcaper</p>
+  <h1>The Cod Caper</h1>
+  <p>Linux boot-to-root style room focused on service enumeration, foothold development, and privilege escalation paths. This page consolidates local notes, recovered artifacts, and cleaned-up workflow guidance with sensitive answers and flags redacted.</p>
+</section>
+
+<section class="panel">
+  <h2>Room Profile</h2>
+  <p>Built from supporting notes and artifacts. This room is grouped under <strong>Linux and PrivEsc</strong>.</p>
+  <div class="tag-list">
+    <span class="tag">Linux and PrivEsc</span>
+    <span class="tag">2 docx note</span>
+    <span class="tag">2 command artifact</span>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>Attack Path Overview</h2>
+  <p>The Cod Caper usually emphasizes methodical Linux enumeration: identify the exposed services, leverage the web surface for credentials or entry, obtain user access, and escalate through sudo or binary abuse after local inspection.</p>
+  <div class="tag-list">
+    <span class="tag">service discovery</span>
+    <span class="tag">web-assisted foothold</span>
+    <span class="tag">user access</span>
+    <span class="tag">sudo or binary abuse</span>
+  </div>
+</section>
+
+## Operator Notes
+
+## Recon
+
+- The Cod Caper is best approached through structured enumeration rather than noisy exploitation.
+- The early workflow usually centers on service discovery, web-assisted foothold, which exposes the route into the room.
+
+## Initial Access
+
+- The intended foothold comes from following the attack path described in the room flow and validating the exposed service behavior.
+- In practice, this means converting the discovered clues into working access through service discovery and adjacent enumeration findings.
+
+## Privilege Escalation
+
+- After the first foothold, the room shifts into post-exploitation and local review.
+- The key escalation themes are user access, sudo or binary abuse, which complete the move to the final proof material.
+
+## Defensive Takeaway
+
+- The Cod Caper reinforces how small exposure points compound when enumeration is disciplined and service relationships are understood.
+- The defensive lesson is to reduce credential reuse, remove unnecessary trust paths, and harden secondary services before they become the pivot.
+
+## Supporting Notes
+
+### Big
+
+!
+!_archives
+!_images
+!backup
+!images
+!res
+!textove_diskuse
+!ut
+.bash_history
+.bashrc
+.cvs
+.cvsignore
+.forward
+.git
+.history
+.htaccess
+.htpasswd
+.listing
+.passwd
+.perf
+.profile
+.rhosts
+.ssh
+.subversion
+.svn
+.web
+0
+0-0-1
+0-12
+0-newstore
+00
+00-backup
+00-cache
+00-img
+00-inc
+00-mp
+00-ps
+000
+0000
+000000
+00000000
+0001
+0007
+001
+002
+007
+007007
+01
+02
+0246
+0249
+03
+04
+05
+0594wm
+06
+07
+08
+09
+1
+10
+100
+1000
+1001
+1009
+101
+102
+1022
+1024
+103
+104
+105
+106
+10668
+107
+108
+109
+10sne1
+11
+110
+111
+1111
+111111
+112
+113
+114
+115
+116
+1166
+1168
+1169
+117
+1173
+1178
+1179
+118
+1187
+1188
+1189
+119
+1191
+1193
+12
+120
+1203
+1204
+1205
+1208
+121
+1210
+1211
+1212
+121212
+1213
+1214
+1215
+1216
+1217
+1218
+122
+1221
+1222
+1224
+1225
+1229
+123
+1230
+123123
+1234
+12345
+123456
+1234567
+12345678
+1234qwer
+1237
+123abc
+123go
+124
+1244
+125
+1250
+126
+1261
+1263
+127
+1273
+1277
+1278
+128
+1280
+1283
+129
+1291
+1298
+12all
+12xyz34
+13
+130
+131
+1312
+1313
+131313
+132
+1320
+1324
+133
+1332
+134
+1341
+1349
+135
+1350
+1354
+13579
+1358
+136
+1366
+1369
+137
+1371
+1372
+1373
+1379
+138
+1383
+139
+1399
+14
+140
+1400
+1405
+141
+142
+143
+144
+14430
+145
+146
+147
+148
+1480
+1489
+149
+1493
+1498
+15
+150
+1500
+151
+152
+153
+154
+1548
+155
+156
+157
+1572
+158
+1585
+159
+1590
+1593
+1594
+1595
+1596
+16
+160
+161
+162
+164
+165
+1650
+166
+167
+1676
+168
+169
+1694
+1698
+17
+170
+1701d
+1702
+1703
+1704
+1705
+1706
+1707
+171
+1717
+172
+1720
+173
+1736
+174
+1747
+175
+1756
+1757
+176
+1762
+177
+1771
+1779
+178
+1794
+18
+180
+1809
+181
+1814
+1816
+1825
+183
+184
+185
+187
+188
+189
+1897
+1899-hoffenheim
+19
+190
+191
+192
+1928
+193
+194
+1951
+1955
+196
+1960
+1969
+197
+1970
+198
+199
+1990
+1991
+1992
+1993
+1994
+1995
+1996
+1997
+1998
+1999
+1_files
+1a2b3c
+1c
+1p2o3i
+1q2w3e
+1qaz2wsx
+1qw23e
+1sanjose
+1x1
+2
+2-easy-ways
+20
+200
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+201
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+202
+2020
+203
+204
+205
+206
+2073
+208
+209
+20smb
+21
+210
+211
+2112
+21122112
+212
+2126
+213
+2139
+214
+216
+217
+218
+219
+22
+220
+2201
+221
+222
+2222
+223
+224
+225
+2257
+227
+228
+229
+23
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+24
+240
+241
+242
+243
+246
+247
+248
+249
+24hourfitness
+25
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+25all
+25fb8
+25lh8
+26
+261
+262
+263
+264
+265
+266
+267
+268
+269
+27
+270
+271
+272
+273
+274
+275
+276
+277
+279
+28
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+29
+290
+291
+292
+293
+294
+295
+296
+297
+298
+2_files
+2co
+2d
+2db
+2g
+2welcome
+2xfun1970
+2z
+3
+30
+300
+3000
+301
+302
+303
+304
+305
+306
+307
+308
+309
+31
+310monitoring
+311
+313
+314
+315
+316
+317
+319
+32
+320
+322
+32297
+325
+326
+327
+328
+329
+33
+330
+331
+332
+333
+334
+335
+336
+337
+34
+340
+341
+343
+344
+345
+346
+347
+348
+349
+35
+350
+351
+352
+353
+354
+355
+356
+358
+359
+3
+
+## Evidence Pack
+
+### gobuster
+
+```text
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.37.111
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                ./big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,txt,php
+[+] Timeout:                 10s
+===============================================================
+2021/06/26 18:40:17 Starting gobuster in directory enumeration mode
+===============================================================
+
+/.htaccess            (Status: 403) [Size: 277]
+
+/.htaccess.txt        (Status: 403) [Size: 277]
+
+/.htpasswd.php        (Status: 403) [Size: 277]
+
+/.htaccess.php        (Status: 403) [Size: 277]
+
+/.htpasswd.html       (Status: 403) [Size: 277]
+
+/.htpasswd.txt        (Status: 403) [Size: 277]
+
+/.htaccess.html       (Status: 403) [Size: 277]
+
+/.htpasswd            (Status: 403) [Size: 277]
+
+/administrator.php    (Status: 200) [Size: 409]
+```
+
+### nmap-initial
+
+```text
+# Nmap 7.91 scan initiated Fri Jun 25 21:28:14 2021 as: nmap -sC -sV -oN nmap-initial 10.10.173.72
+Nmap scan report for 10.10.173.72
+Host is up (0.53s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 6d:2c:40:1b:6c:15:7c:fc:bf:9b:55:22:61:2a:56:fc (RSA)
+|   256 ff:89:32:98:f4:77:9c:09:39:f5:af:4a:4f:08:d6:f5 (ECDSA)
+|_  256 89:92:63:e7:1d:2b:3a:af:6c:f9:39:56:5b:55:7e:f9 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jun 25 21:29:05 2021 -- 1 IP address (1 host up) scanned in 51.57 seconds
+```

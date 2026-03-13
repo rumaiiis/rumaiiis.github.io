@@ -1,19 +1,19 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- assign nav_pages = site.html_pages | concat: site.pages -%}
 <header>
-    <div class="menu">
-        <div class="terminal-line">
-        <b><span>root@RUMAIS:/#</span></b>
-        <span class="command">ls</span>
-        </div>
-
-
-        <ul>
-            {%- for path in page_paths -%}
-                {%- assign my_page = site.pages | where: "path", path | first -%}
-                {%- if my_page.title -%}
-                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                {%- endif -%}
-            {%- endfor -%}
-        </ul>
+  <div class="menu shell-frame">
+    <div class="terminal-line">
+      <b><span>root@rumais:~#</span></b>
+      <span class="command">enumerate --surface web</span>
     </div>
+
+    <ul>
+      {%- for path in page_paths -%}
+        {%- assign my_page = nav_pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
 </header>
